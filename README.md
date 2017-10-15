@@ -1,1 +1,0 @@
-# opensips-summit-front
