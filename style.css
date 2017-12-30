@@ -62,7 +62,9 @@ a {
 	font-weight:bold;
 }
 
-a:hover,
+a:hover {
+	    color: #AEBF3B;	
+}
 a:focus {
 	outline: none;
 	text-decoration: none;
