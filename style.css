@@ -232,9 +232,62 @@ button:focus {
                 0px 7px rgba(88,88,88,1),
                 0px 8px rgba(78,78,78,1),
                 0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
-        }
+        
 
-       
+        background-color: #E8E8E8;		
+ 		
+    -webkit-border-radius: 10px;		
+     -webkit-transition: -webkit-transform .1s ease-in-out;		
+    		
+    display: inline-block;		
+     padding: 10px 40px 10px 40px;		
+     		
+    color: #1c1b1b;		
+    text-transform: uppercase;		
+    font-family: 'Montserrat', sans-serif;		
+     font-weight: 700;		
+     font-size: 32px;		
+     		
+     text-shadow: 0px 1px #fff, 0px -1px #AEBF3B;		
+ }		
+ 		
+        .buttonp:hover {		
+             color: #AEBF3B;		
+             text-shadow: 0px -1px #AEBF3B;		
+             cursor: pointer;		
+         }		
+  		  
+       		        
+		  
+		  .buttonp:active {
+              -webkit-box-shadow: -webkit-box-shadow: @@ -257,26 +234,7 @@ button:focus {
+                   0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
+          }		         
+  		  
+ -            -webkit-transform: translate(0, 5px); /* depth of button press */		
+ -        }		
+ -		
+ -    .buttonp:after {		
+ -        content: ">";		
+ -        display: block;		
+ -        width: 10px;		
+ -        height: 10px;		
+ -    		
+ -        position: inherit;		
+ -        right: 14px;		
+ -        top: 12px;    		
+ -        		
+ -        font-family: 'Montserrat', sans-serif;		
+ -        font-weight: 700;		
+ -        color: #AEBF3B;		
+ -        text-shadow: 0px 1px #fff, 0px -1px #AEBF3B;		
+ -        font-size: 26px;		
+ -    }
+
+
+
+
+
 
 /* ========= BUTTON =========*/
 
