@@ -175,8 +175,33 @@ button:focus {
 }
 
 
+/*--------------------*/
+/* CALL */
+/*--------------------*/
 
-.button {
+#mu-call {
+	background-color: ##AEBF3B;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-call-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-call-content {
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	width: 100%;
+}
+
+
+.buttonp {
     position: absolute;
     top: 100px;
     left: 200px;
@@ -197,7 +222,7 @@ button:focus {
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
 } 
 
-.button span {
+.buttonp span {
     background-color: #E8E8E8;
     
     background-image: 
@@ -263,13 +288,13 @@ button:focus {
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
 
-        .button span:hover {
+        .buttonp span:hover {
             color: #AEBF3B;
             text-shadow: 0px -1px #97A63A;
             cursor: pointer;
         }
 
-        .button:active {
+        .buttonp:active {
             -webkit-box-shadow: 
                 0px 3px rgba(128,128,128,1),
                 0px 4px rgba(118,118,118,1),
@@ -280,11 +305,11 @@ button:focus {
                 0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
         }
 
-        .button:active span{
+        .buttonp:active span{
             -webkit-transform: translate(0, 5px); /* depth of button press */
         }
 
-    .button span:after {
+    .buttonp span:after {
         content: ">";
         display: block;
         width: 10px;
