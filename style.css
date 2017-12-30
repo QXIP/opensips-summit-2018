@@ -224,73 +224,25 @@ button:focus {
 
 .buttonp span {
     background-color: #E8E8E8;
-    
-    background-image: 
-        /* gloss gradient */
-        -webkit-gradient(
-            linear, 
-            left bottom, 
-            left top, 
-            color-stop(50%,rgba(255,255,255,0)), 
-            color-stop(50%,rgba(255,255,255,0.3)), 
-            color-stop(100%,rgba(255,255,255,0.2))),
-        
-        /* dark outside gradient */
-        -webkit-gradient(
-            linear, 
-            left top, 
-            right top, 
-            color-stop(0%,rgba(210,210,210,0.3)), 
-            color-stop(20%,rgba(210,210,210,0)), 
-            color-stop(80%,rgba(210,210,210,0)), 
-            color-stop(100%,rgba(210,210,210,0.3))),
-        
-        /* light inner gradient */
-        -webkit-gradient(
-            linear, 
-            left top, 
-            right top, 
-            color-stop(0%,rgba(255,255,255,0)), 
-            color-stop(20%,rgba(255,255,255,0.5)), 
-            color-stop(80%,rgba(255,255,255,0.5)), 
-            color-stop(100%,rgba(255,255,255,0))),        
-        
-        /* diagonal line pattern */
-        -webkit-gradient(
-            linear, 
-            0% 100%, 
-            100% 0%, 
-            color-stop(0%,rgba(255,255,255,0)), 
-            color-stop(40%,rgba(255,255,255,0)), 
-            color-stop(40%,#D2D2D1), 
-            color-stop(60%,#D2D2D1), 
-            color-stop(60%,rgba(255,255,255,0)), 
-            color-stop(100%,rgba(255,255,255,0)));
-    
-        -webkit-box-shadow:
-            0px -1px #fff, /* top highlight */
-            0px 1px 1px #FFFFFF; /* bottom edge */
-    
-    -webkit-background-size: 100%, 100%, 100%, 4px 4px;
-    
+
     -webkit-border-radius: 10px;
     -webkit-transition: -webkit-transform .1s ease-in-out;
     
     display: inline-block;
     padding: 10px 40px 10px 40px;
     
-    color: #3A474D;
+    color: #1c1b1b;
     text-transform: uppercase;
-    font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 32px;
     
-    text-shadow: 0px 1px #fff, 0px -1px #262F33;
+    text-shadow: 0px 1px #fff, 0px -1px #AEBF3B;
 }
 
         .buttonp span:hover {
             color: #AEBF3B;
-            text-shadow: 0px -1px #97A63A;
+            text-shadow: 0px -1px #AEBF3B;
             cursor: pointer;
         }
 
@@ -319,10 +271,10 @@ button:focus {
         right: 14px;
         top: 12px;    
         
-        font-family: 'Cabin';
+        font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         color: #AEBF3B;
-        text-shadow: 0px 1px #fff, 0px -1px #97A63A;
+        text-shadow: 0px 1px #fff, 0px -1px #AEBF3B;
         font-size: 26px;
     }
 
