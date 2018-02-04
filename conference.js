@@ -78,8 +78,8 @@ var conference = {
 	  items: [ 
 	    { time: "8:30-9:30", 
 	      description: "Registration & Breakfast", 
-	      subtitle: "", 
-	      icon: "assets/images/speaker.png" },
+	      subtitle: "Venue Front-Desk", 
+	      icon: "assets/images/lunch.png" },
 	    { time: "9:30-13:00", 
 	      description: "Conference Day", 
 	      subtitle: "Speakers TBA", 
