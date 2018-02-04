@@ -73,7 +73,8 @@ var conference = {
         //  {"name":"","title":"", "image":"","twitter":"","presentation":""},
     ],
     schedule: [ 
-        { id: "first-day", 
+        { id: "first-day",
+	  active: "in active",
 	  items: [ 
 	    { time: "8:00-9:00AM", 
 	      description: "Coffee Break", 
@@ -86,6 +87,7 @@ var conference = {
 	  ] 
 	},
         { id: "second-day", 
+	  active: "",
 	  items: [ 
 	    { time: "9:00-10:00AM",
 	      description: "Coffee Break", 
