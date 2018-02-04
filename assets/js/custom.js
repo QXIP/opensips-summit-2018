@@ -156,7 +156,7 @@
 	/*  5. SPEAKERS SLIDEER ( SLICK SLIDER )
 	/* ----------------------------------------------------------- */
 
-		var sched_template = '{{#schedule}}<div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="{{ id }}"><ul>{{#items}}<li><div class="mu-single-event"><p class="mu-event-time">{{ time }}</p><h3>{{ description }}</h3><span>{{ subtitle }}</span></div></li>{{/items}}</ul></div>{{/schedule}}';
+		var sched_template = '{{#schedule}}<div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="{{ id }}"><ul>{{#items}}<li><div class="mu-single-event"><img src="{{ icon }}"><p class="mu-event-time">{{ time }}</p><h3>{{ description }}</h3><span>{{ subtitle }}</span></div></li>{{/items}}</ul></div>{{/schedule}}';
 		var sched_html = Mustache.to_html(sched_template, conference);
 		document.getElementsByClassName('mu-schedule-content')[0].innerHTML = sched_html;	
 	
