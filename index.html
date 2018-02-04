@@ -55,17 +55,7 @@
 		    {"name":"Lorenzo Mangani","title":"CEO @QXIP", "image":"http://image.jpg","twitter":"@qxip","presentation":"HEP in NodeJS"},
 		  ]};
 			
-		var template = '{{#speakers}}
-		<div class="mu-single-speakers slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 285px;">
-		    <img src="{{ image }}" alt="speaker img" style="height: 200px;">
-		    <div class="mu-single-speakers-info">
-			<h3>{{ name }}</h3>
-			<p>{{ title }}</p>
-			<ul class="mu-single-speakers-social">
-				<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i>{{ twitter }}</a></li>
-			</ul>
-		    </div>
-		</div>{{/speakers}}';
+		var template = '{{#speakers}}<div class="mu-single-speakers slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 285px;"><img src="{{ image }}" alt="speaker img" style="height: 200px;"><div class="mu-single-speakers-info"><h3>{{ name }}</h3><p>{{ title }}</p><ul class="mu-single-speakers-social"><li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i>{{ twitter }}</a></li></ul></div></div>{{/speakers}}';
 		var html = Mustache.to_html(template, person);
 		document.getElementById('CUSTOMSPEAKERS').innerHTML = html;
 	    });		  
