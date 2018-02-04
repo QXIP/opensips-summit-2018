@@ -899,10 +899,12 @@ button:focus {
 .mu-single-speakers-info h3 {
 	margin-bottom: 4px;
 	font-size: 22px;
+	text-align: left;
 }
 
 .mu-single-speakers-info p {
 	margin-bottom: 5px;
+	text-align: left;
 }
 
 .mu-single-speakers-social {
