@@ -46,9 +46,31 @@
 	setTimeout(function(){function t(){var t=window.GretaOptions||{};t.lazyLoad=t.lazyLoad||{};for(var e=t.lazyLoad.imgAttribute||"data-src",a=t.lazyLoad.bgImgAttribute||"data-bg-src",r=["DIV","SECTION","ARTICLE","ASIDE","B","BODY","FIGURE","HTML","I","LI","MAIN","MARK","NAV","P","SPAN","STRONG","SUMMARY","TABLE","TIME","UL","H1","H2","H3","H4","LABEL"],l=t.lazyLoad.addClassOnLoad||"",A=document.querySelectorAll("IMG["+e+"]"),o=0;o<A.length;o++){var n=A[o].getAttribute(e);n&&A[o].src!==n&&(A[o].src=n,l.length>0&&(A[o].className+=" "+l))}for(var o=0;o<r.length;o++)for(var I=document.querySelectorAll(r[o]+"["+a+"]"),L=0;L<I.length;L++){var n=I[L].getAttribute(a);n&&I[L].style.backgroundImage!=="url("+n+")"&&(I[L].style.backgroundImage="url("+n+")",l.length>0&&(I[L].className+=" "+l))}}window.greta||setInterval(t,1e3)},1e3);
 	</script>
 
-	<script src="https://cdn.greta.io/greta.min.js"></script>
-
-
+	  
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+	  <script>
+	    document.addEventListener("DOMContentLoaded", ()=>{
+ 		 var speakers = 
+		  { speakers: [
+		    {"name":"Lorenzo Mangani","title":"CEO @QXIP", "image":"http://image.jpg","twitter":"@qxip","presentation":"HEP in NodeJS"},
+		  ]};
+			
+		var template = '{{#speakers}}
+		<div class="mu-single-speakers slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 285px;">
+		    <img src="{{ image }}" alt="speaker img" style="height: 200px;">
+		    <div class="mu-single-speakers-info">
+			<h3>{{ name }}</h3>
+			<p>{{ title }}</p>
+			<ul class="mu-single-speakers-social">
+				<li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i>{{ twitter }}</a></li>
+			</ul>
+		    </div>
+		</div>{{/speakers}}';
+		var html = Mustache.to_html(template, person);
+		document.getElementById('CUSTOMSPEAKERS').innerHTML = html;
+	    });		  
+	  </script>	  
+	
   </head>
   <body>
   	
@@ -471,7 +493,7 @@
 							<!-- Start Speakers Content -->
 							<div class="mu-speakers-content">
 
-								<div class="mu-speakers-slider">
+								<div class="mu-speakers-slider" id="CUSTOMSPEAKERS">
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
