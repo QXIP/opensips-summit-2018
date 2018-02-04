@@ -48,14 +48,14 @@
 
 	  
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-	  <script>
+	  <script type="text/javascript" src="conference.json"></script>
+	  <script type="text/javascript" >
 	    document.addEventListener("DOMContentLoaded", ()=>{
- 		 var conference = 
-		  { speakers: [
-		    {"name":"Bogdan Andrei Iancu","title":"OpenSIPS Founder", "image":"http://i.imgur.com/c0q8TjB.png","twitter":"@opensips","presentation":"OpenSIPS Keynote"},
-		    {"name":"Lorenzo Mangani","title":"CEO @QXIP", "image":"http://i.imgur.com/XJS0Ihj.png","twitter":"@qxip","presentation":"HEP in NodeJS"}
-		  ]};
-			
+ 		// var conference = 
+		//  { speakers: [
+		//    {"name":"Bogdan Andrei Iancu","title":"OpenSIPS Founder", "image":"http://i.imgur.com/c0q8TjB.png","twitter":"@opensips","presentation":"OpenSIPS Keynote"},
+		//    {"name":"Lorenzo Mangani","title":"CEO @QXIP", "image":"http://i.imgur.com/XJS0Ihj.png","twitter":"@qxip","presentation":"HEP in NodeJS"}
+		//  ]};	
 		var template = '{{#speakers}}<div class="mu-single-speakers slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 285px;"><img src="{{ image }}" alt="speaker img" style="height: 200px;"><div class="mu-single-speakers-info"><h3>{{ name }}</h3><p>{{ title }}</p><ul class="mu-single-speakers-social"><li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i>{{ twitter }}</a></li></ul></div></div>{{/speakers}}';
 		var html = Mustache.to_html(template, conference);
 		document.getElementsByClassName('slick-list')[0].innerHTML = html;
