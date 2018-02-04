@@ -16,8 +16,8 @@ var conference = {
         },
         {
             "name": "Razvan Crainea",
-            "titleSr. OpenSIPS Developer "
-            "image ": "http: //i.imgur.com/YbMlg4m.png",
+            "titleSr. OpenSIPS Developer",
+            "image": "http: //i.imgur.com/YbMlg4m.png",
             "twitter": "@razvancrainea",
             "presentation": ""
         },
