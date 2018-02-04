@@ -72,6 +72,27 @@ var conference = {
         },
         //  {"name":"","title":"", "image":"","twitter":"","presentation":""},
     ],
-    schedule: [],
+    schedule: [ 
+        { id: "first-day", 
+	  items: [ 
+	    { time: "8:00-9:00AM", 
+	      description: "Coffee Break", 
+	      subtitle: "Sponsored by OpenSIPS", 
+	      icon: "assets/images/speaker.png" },
+	     { time: "9:00-10:00AM", 
+	      description: "Opensource Lunch", 
+	      subtitle: "Sponsored by OpenSIPS", 
+	      icon: "assets/images/lunch.png" } 
+	  ] 
+	},
+        { id: "second-day", 
+	  items: [ 
+	    { time: "9:00-10:00AM",
+	      description: "Coffee Break", 
+	      subtitle: "Sponsored by OpenSIPS", 
+	      icon: "assets/images/lunch.png" } 
+	  ] 
+	}
+],
     sponsors: []
 };
