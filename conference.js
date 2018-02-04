@@ -1,16 +1,14 @@
 var conference = {
     speakers: [
 	{
-            "id": 1,
-	    "name": "Bogdan Andrei Iancu",
+            "id": 1, "name": "Bogdan Andrei Iancu",
             "title": "OpenSIPS Founder",
             "image": "http://i.imgur.com/c0q8TjB.png",
             "twitter": "@opensips",
             "presentation": "OpenSIPS Keynote"
         },
         {
-            "id": 2,
-	    "name": "Liviu Chiurcu",
+            "id": 2, "name": "Liviu Chiurcu",
             "title": "Sr. OpenSIPS Developer",
             "image": "http://i.imgur.com/LmSk7gI.jpg",
             "twitter": "@liviuchirchu",
@@ -60,7 +58,7 @@ var conference = {
         },
         {
             "id": 9, "name": "Lorenzo Miniero",
-            "title": "Co-Founcer @Meetecho",
+            "title": "Co-Founder @Meetecho",
             "image": "http://i.imgur.com/4rfCiZB.png",
             "twitter": "",
             "presentation": ""
