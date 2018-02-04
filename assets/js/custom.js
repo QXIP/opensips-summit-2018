@@ -156,6 +156,10 @@
 	/*  5. SPEAKERS SLIDEER ( SLICK SLIDER )
 	/* ----------------------------------------------------------- */
 
+		var template = '{{#speakers}}<div class="mu-single-speakers"><img src="{{ image }}" alt="{{ name }}"><div class="mu-single-speakers-info"><h3>{{ name }}</h3><p>{{ title }}</p><ul class="mu-single-speakers-social"><li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i>{{ twitter }}</a></li></ul></div></div>{{/speakers}}';
+		var html = Mustache.to_html(template, conference);
+		document.getElementsByClassName('mu-speakers-slider')[0].innerHTML = html;	
+	
 		$('.mu-speakers-slider').slick({
 		  slidesToShow: 4,
 		  responsive: [
