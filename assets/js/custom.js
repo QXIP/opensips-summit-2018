@@ -156,7 +156,7 @@
 	/*  5. SPEAKERS SLIDEER ( SLICK SLIDER )
 	/* ----------------------------------------------------------- */
 
-		var sched_template = '{{#schedule}}<div role="tabpanel" class="tab-pane fade mu-event-timeline {{active}}" id="{{ id }}"><ul>{{#items}}<li><div class="mu-single-event"><img src="{{ icon }}"><p class="mu-event-time">{{ time }}</p><h3>{{ description }}</h3><span>{{ subtitle }}</span></div></li>{{/items}}</ul></div>{{/schedule}}';
+		var sched_template = '{{#schedule}}<div role="tabpanel" class="tab-pane fade mu-event-timeline {{active}}" id="{{ id }}"><ul>{{#items}}<li><div class="mu-single-event"><img src="{{ icon }}"><p class="mu-event-time">{{ time }}</p><h3>{{ description }}</h3><span>{{ subtitle }}</span><p>{{ text }}</p></div></li>{{/items}}</ul></div>{{/schedule}}';
 		var sched_html = Mustache.to_html(sched_template, conference);
 		document.getElementsByClassName('mu-schedule-content')[0].innerHTML = sched_html;	
 	
@@ -164,7 +164,7 @@
 	/*  5. SPEAKERS SLIDEER ( SLICK SLIDER )
 	/* ----------------------------------------------------------- */
 
-		var template = '{{#speakers}}<div class="mu-single-speakers"><img src="{{ image }}" alt="{{ name }}" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>{{ name }}</h3><p>{{ title }}</p><ul class="mu-single-speakers-social"><li><a href="https://twitter.com/{{ twitter }}" tabindex="-1"><i class="fa fa-twitter"></i></a></li></ul></div></div>{{/speakers}}';
+		var template = '{{#speakers}}<div class="mu-single-speakers"><img src="{{ image }}" alt="{{ name }}" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>{{ name }} <a href="https://twitter.com/{{ twitter }}" target="_blank" tabindex="-1"></h3><p>{{ title }}</p><p>{{ presentation }}</p></div></div>{{/speakers}}';
 		var html = Mustache.to_html(template, conference);
 		document.getElementsByClassName('mu-speakers-slider')[0].innerHTML = html;	
 	
