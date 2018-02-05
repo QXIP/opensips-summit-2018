@@ -139,17 +139,17 @@ var conference = {
 	{ id: "fourth-day", 
 	  active: "",
 	  items: [ 
-	    { time: "9:00-13:00", 
+	    { time: "9:00-17:00", 
 	      description: "OpenSIPS Training", 
-	      subtitle: "by OpenSIPS Team", 
+	      subtitle: "The OpenSIPs Training will cover the new clustering capabilities of OpenSIPS 2.4 . The concept of this training course is to spend the day building from the ground up a fully operational OpenSIPS cluster for typical class 4 VoIP services.", 
 	      icon: "assets/images/training.png" },
 	    { time: "13:00-14:00", 
 	      description: "Opensource Lunch", 
 	      subtitle: "Sponsored by OpenSIPS", 
 	      icon: "assets/images/lunch.png" },
-	    { time: "14:00-18:00", 
+	    { time: "09:00-17:00", 
 	      description: "OpenSIPS Training", 
-	      subtitle: "by FreeSWITCH Team", 
+	      subtitle: "FreeSWITCH Training will cover the installation and configuration of FreeSWITCH. We will walk through making calls, administer various configurations, enable and utilize various modules. We'll also cover some additional functions of FreeSWITCH such as video call recording, video conferencing, Call Detail Recording, troubleshooting, logging, and interacting with Event Socket Library.", 
 	      icon: "assets/images/training.png" }
 	  ] 
 	}
