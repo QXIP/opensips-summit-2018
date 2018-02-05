@@ -4,9 +4,18 @@ var conference = {
             "id": 1, "name": "Bogdan Andrei Iancu",
             "title": "OpenSIPS Founder",
             "image": "http://i.imgur.com/c0q8TjB.png",
-            "twitter": "opensips",
+            "twitter": "https://twitter.com/opensips",
             "presentation": "OpenSIPS Keynote"
         },
+	 {
+            "id": 12, "name": "Giovanni Maruzzelli",
+            "title": "OpenTelecom.it",
+            "image": "http://i.imgur.com/heUiUgH.jpg?1",
+            "twitter": "https://twitter.com/gmaruzz",
+            "presentation": "FreeSWITCH clustering with OpenSIPS (done well)"
+        },
+	    
+	    
         {
             "id": 2, "name": "Liviu Chiurcu",
             "title": "Sr. OpenSIPS Developer",
@@ -28,6 +37,16 @@ var conference = {
             "twitter": "ratetel",
             "presentation": ""
         },
+	   
+	    {
+            "id": 11, "name": "Flavio Goncalves",
+            "title": "SIPPulse",
+            "image": "http://i.imgur.com/5PS7U7r.png",
+            "twitter": "https://twitter.com/SipPulse",
+            "presentation": ""
+        },
+	    
+	    
         {
             "id": 5, "name": "Lorenzo Mangani",
             "title": "CEO @QXIP",
@@ -70,7 +89,7 @@ var conference = {
             "twitter": "adubovikov",
             "presentation": ""
         },
-        //  {"name":"","title":"", "image":"","twitter":"","presentation":""},
+        //  {"id":13,"name":"","title":"", "image":"","twitter":"","presentation":""},
     ],
     schedule: [ 
         { id: "first-day",
