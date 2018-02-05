@@ -6,9 +6,7 @@ var conference = {
             "image": "http://i.imgur.com/c0q8TjB.png",
             "twitter": "https://twitter.com/opensips",
             "presentation": "OpenSIPS Keynote"
-        },
-	    
-	    
+        },   
         {
             "id": 2, "name": "Liviu Chiurcu",
             "title": "Sr. OpenSIPS Developer",
@@ -29,8 +27,7 @@ var conference = {
             "image": "http://i.imgur.com/FvHRqNc.png",
             "twitter": "ratetel",
             "presentation": ""
-	}
-	    
+	}  
         {
             "id": 5, "name": "Lorenzo Mangani",
             "title": "CEO @QXIP",
@@ -72,8 +69,7 @@ var conference = {
             "image": "http://i.imgur.com/F83gMim.png",
             "twitter": "https://twitter.com/adubovikov",
             "presentation": ""
-        },
-	    
+        },    
 	{
             "id": 11, "name": "Giovanni Maruzzelli",
             "title": "OpenTelecom.it",
@@ -81,13 +77,13 @@ var conference = {
             "twitter": "https://twitter.com/gmaruzz",
             "presentation": "FreeSWITCH clustering with OpenSIPS (done well)"
         },    
-	 {
+	{
 	    "id":12,"name":"Maxim Sobolev",
 	    "title":"Sippy Software, Inc.", 
 	    "image":"http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png",
 	    "twitter":"https://twitter.com/sobomax",
 	    "presentation":"SIP in the age of IoT"
-	  }
+	 },
 	    
 	    
         //  {"id":13,"name":"","title":"", "image":"","twitter":"","presentation":""},
