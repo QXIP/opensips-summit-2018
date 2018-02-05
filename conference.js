@@ -7,13 +7,6 @@ var conference = {
             "twitter": "https://twitter.com/opensips",
             "presentation": "OpenSIPS Keynote"
         },
-	 {
-            "id": 12, "name": "Giovanni Maruzzelli",
-            "title": "OpenTelecom.it",
-            "image": "http://i.imgur.com/heUiUgH.jpg?1",
-            "twitter": "https://twitter.com/gmaruzz",
-            "presentation": "FreeSWITCH clustering with OpenSIPS (done well)"
-        },
 	    
 	    
         {
@@ -36,16 +29,7 @@ var conference = {
             "image": "http://i.imgur.com/FvHRqNc.png",
             "twitter": "ratetel",
             "presentation": ""
-        },
-	   
-	    {
-            "id": 11, "name": "Flavio Goncalves",
-            "title": "SIPPulse",
-            "image": "http://i.imgur.com/5PS7U7r.png",
-            "twitter": "https://twitter.com/SipPulse",
-            "presentation": ""
-        },
-	    
+	{
 	    
         {
             "id": 5, "name": "Lorenzo Mangani",
@@ -89,7 +73,15 @@ var conference = {
             "twitter": "adubovikov",
             "presentation": ""
         },
-        //  {"id":13,"name":"","title":"", "image":"","twitter":"","presentation":""},
+	    
+	{
+            "id": 11, "name": "Giovanni Maruzzelli",
+            "title": "OpenTelecom.it",
+            "image": "http://i.imgur.com/heUiUgH.jpg?1",
+            "twitter": "https://twitter.com/gmaruzz",
+            "presentation": "FreeSWITCH clustering with OpenSIPS (done well)"
+        },    
+        //  {"id":12,"name":"","title":"", "image":"","twitter":"","presentation":""},
     ],
     schedule: [ 
         { id: "first-day",
