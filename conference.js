@@ -148,7 +148,7 @@ var conference = {
 	      subtitle: "Sponsored by OpenSIPS", 
 	      icon: "assets/images/lunch.png" },
 	    { time: "09:00-17:00", 
-	      description: "OpenSIPS Training", 
+	      description: "FreeSWITCH Training", 
 	      subtitle: "FreeSWITCH Training will cover the installation and configuration of FreeSWITCH. We will walk through making calls, administer various configurations, enable and utilize various modules. We'll also cover some additional functions of FreeSWITCH such as video call recording, video conferencing, Call Detail Recording, troubleshooting, logging, and interacting with Event Socket Library.", 
 	      icon: "assets/images/training.png" }
 	  ] 
