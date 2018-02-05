@@ -29,7 +29,7 @@ var conference = {
             "image": "http://i.imgur.com/FvHRqNc.png",
             "twitter": "ratetel",
             "presentation": ""
-	{
+	}
 	    
         {
             "id": 5, "name": "Lorenzo Mangani",
