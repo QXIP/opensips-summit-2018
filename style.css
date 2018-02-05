@@ -18,6 +18,7 @@ Version: 1.0
 #SPEAKERS
 #VENUE
 #PRICING PLANS
+#TRAININGS
 #REGISTER FORM
 #FAQ
 #OUR
@@ -522,12 +523,7 @@ button:focus {
 	width: 100%;
 }
 	 
-#mu-training {
-	background-color: #fff;
-	display: inline;
-	float: left;
-	width: 100%;
-}
+
 
 .mu-about-area {
 	display: inline;
@@ -992,7 +988,7 @@ button:focus {
 
 
 #mu-pricing {
-	background-color: #fff;
+	background-color: #AEBF3B;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1103,6 +1099,27 @@ button:focus {
 	text-align: center;
 }
 
+	 
+/*--------------------*/
+/* TRAINING */
+/*--------------------*/	 
+	 
+	 #mu-training {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+	 
+	  #mu-trainingf {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+	 
+	 
+	 
 /*--------------------*/
 /* REGISTER */
 /*--------------------*/
