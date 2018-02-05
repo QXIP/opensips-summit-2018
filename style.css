@@ -521,6 +521,13 @@ button:focus {
 	float: left;
 	width: 100%;
 }
+	 
+#mu-training {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
 
 .mu-about-area {
 	display: inline;
