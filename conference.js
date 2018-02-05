@@ -18,7 +18,7 @@ var conference = {
             "id": 3, "name": "Razvan Crainea",
             "title": "Sr. OpenSIPS Developer",
             "image": "http://i.imgur.com/YbMlg4m.png",
-            "twitter": "razvancrainea",
+            "twitter": "@razvancrainea",
             "presentation": ""
         },
         {
@@ -27,12 +27,12 @@ var conference = {
             "image": "http://i.imgur.com/FvHRqNc.png",
             "twitter": "ratetel",
             "presentation": ""
-	}  
+	},  
         {
             "id": 5, "name": "Lorenzo Mangani",
             "title": "CEO @QXIP",
             "image": "http://i.imgur.com/XJS0Ihj.png",
-            "twitter": "qxip",
+            "twitter": "https://twitter.com/qxip",
             "presentation": "HEP in NodeJS"
         },
 	{
