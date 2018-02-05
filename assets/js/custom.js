@@ -164,7 +164,7 @@
 	/*  5. SPEAKERS SLIDEER ( SLICK SLIDER )
 	/* ----------------------------------------------------------- */
 
-		var template = '{{#speakers}}<div class="mu-single-speakers"><img src="{{ image }}" alt="{{ name }}" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>{{ name }} <a href="https://twitter.com/{{ twitter }}" target="_blank" tabindex="-1"></h3><p>{{ title }}</p><p>{{ presentation }}</p></div></div>{{/speakers}}';
+		var template = '{{#speakers}}<div class="mu-single-speakers"><img src="{{ image }}" alt="{{ name }}" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>{{ name }} <a href="https://twitter.com/{{ twitter }}" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>{{ title }}</p><p>{{ presentation }}</p></div></div>{{/speakers}}';
 		var html = Mustache.to_html(template, conference);
 		document.getElementsByClassName('mu-speakers-slider')[0].innerHTML = html;	
 	
