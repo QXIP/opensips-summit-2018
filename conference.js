@@ -8,10 +8,10 @@ var conference = {
             "presentation": "OpenSIPS Keynote"
         },   
         {
-            "id": 2, "name": "Liviu Chiurcu",
+            "id": 2, "name": "Liviu Chircu",
             "title": "Sr. OpenSIPS Developer",
             "image": "http://i.imgur.com/LmSk7gI.jpg",
-            "twitter": "@liviuchirchu",
+            "twitter": "@liviuchircu",
             "presentation": ""
         },
         {
