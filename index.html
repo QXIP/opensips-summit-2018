@@ -138,6 +138,9 @@
 								<div class="col-md-8">
 									<div class="mu-about-right">
 										<h2>Next Stop</h2><h1>OpenSIPS Summit</h1>
+
+											<p id="app">{{ message }}</p>
+
 										<p>Join fellow VoIP & RTC experts, developers and users from all over the world for <b>3+1</b> days of talks, 
 										   inspiring presentations, workshops and trainings about <b>OpenSIPS</b> and the <b>Open-Source</b> ecosystem <i>(Freeswitch, Asterisk, Homer, Janus and many more)</i></p>
 										  <p style="font-size: 12px;">
@@ -968,10 +971,14 @@
 	</footer>
 	<!-- End footer -->
 
-	
-	
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- VUE  library -->
+	<script src="vue.min.js"></script>
+
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
@@ -981,6 +988,17 @@
     <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="assets/js/app.js"></script>
+
+	<script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue.js!'
+            }
+        });
+
+
+	</script>
   
        
 	
