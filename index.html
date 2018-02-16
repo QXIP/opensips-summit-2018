@@ -218,12 +218,14 @@
                                 </ul>
 
                                 <!-- Tab panes -->
-                                <div class="tab-content mu-schedule-content----">
-                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="speakers-list123">
-                                        <div class="panel-group" id="accordion2">
+                                <div class="tab-content mu-schedule-content----" id="panelBodyApp">
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="speakers-list123" >
+                                        <div class="panel-group" id="accordion2" >
                                             <br />
                                             <br />
                                             <br />
+
+
                                             <div class="panel panel-default">
                                                 <div class="panel-heading">
                                                     <h4 class="panel-title">
@@ -235,7 +237,7 @@
                                                     </h4>
                                                 </div>
                                                 <div id="collapse1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                                    <div class="panel-body">
+                                                    <div class="panel-body" >
                                                         <span class="speaker-speech-title">Key Notes - An introduction in OpenSIPS 2.3</span>
                                                         <div class="speaker-speech-abstract">
                                                             OpenSIPS 2.3 version is built around the integration concept - the OpenSIPS ability to integrate and work together in all possible means with other projects, protocols, systems or concepts. Understanding the integration capabilities of OpenSIPS 2.3 will unveil a powerful tool for building SIP systems.
@@ -252,90 +254,39 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse2" aria-expanded="false" class="collapsed">
-                                                            <span class="fa fa-angle-down"></span> Mario Speedwagon
-                                                            <i class="fa fa-info-circle pull-right"></i>
-                                                            <span class="pull-right speaker-desc">Some description</span>
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                                    <div class="panel-body">
-                                                        <div class="clearfix">
-                                                            <img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu">
-                                                            <div class="speaker-text-desc">
-                                                                Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
+												<!-- Start Vue Printing  -->
+
+                                            <div class="panel panel-default" v-for="(item, index) in confData.SPEAKERS" >
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse1" aria-expanded="false" class="collapsed">
+															<span class="fa fa-angle-down"></span> {{item.NAME}}
+															<i class="fa fa-info-circle pull-right"></i>
+															<span class="pull-right speaker-desc">{{item.NAME}}</span>
+														</a>
+													</h4>
+												</div>
+												<div id="collapse1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+													<div class="panel-body" >
+														<span class="speaker-speech-title">{{item.SPEECHTITLE}}</span>
+														<div class="speaker-speech-abstract">
+															{{item.SPEECHABSTRACT}}
+														</div>
+														<div class="clearfix speaker-text-wrap">
+															<img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu">
+															<div class="speaker-text-desc">
+																<span class="speaker-text-title">{{item.NAME}}</span>
+																<span class="speaker-text-company">{{item.COMPANY}}</span>
+																{{item.DESC}}
+															</div>
+														</div>
+													</div>
+												</div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse3" aria-expanded="false" class="collapsed">
-                                                            <span class="fa fa-angle-down"></span> Anna Sthesia
-                                                            <i class="fa fa-info-circle pull-right"></i>
-                                                            <span class="pull-right speaker-desc">Some description</span>
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapse3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                                    <div class="panel-body">
-                                                        <div class="clearfix">
-                                                            <img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu">
-                                                            <div class="speaker-text-desc">
-                                                                Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse4" aria-expanded="false" class="collapsed">
-                                                            <span class="fa fa-angle-down"></span> Paul Molive
-                                                            <i class="fa fa-info-circle pull-right"></i>
-                                                            <span class="pull-right speaker-desc">Some description</span>
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapse4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                                    <div class="panel-body">
-                                                        <div class="clearfix">
-                                                            <img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu">
-                                                            <div class="speaker-text-desc">
-                                                                Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordion2" href="#collapse5" aria-expanded="false" class="collapsed">
-                                                            <span class="fa fa-angle-down"></span> Anna Mull
-                                                            <i class="fa fa-info-circle pull-right"></i>
-                                                            <span class="pull-right speaker-desc">Some description</span>
-                                                        </a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapse5" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                                    <div class="panel-body">
-                                                        <div class="clearfix">
-                                                            <img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu">
-                                                            <div class="speaker-text-desc">
-                                                                Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+											<!-- Start Vue Printing  -->
+
                                         </div>
                                     </div>
                                 <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="first-day"><ul><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">8:30-9:30</p><h3>Registration &amp; Breakfast</h3><span>Venue Front-Desk</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">9:30-13:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">14:00-17:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/round-table.png"><p class="mu-event-time">17:00-18:00</p><h3>Round Tables</h3><span>Featuring Speakers &amp; OpenSIPS Team</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li></ul></div><div role="tabpanel" class="tab-pane fade mu-event-timeline " id="second-day"><ul><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">9:30-13:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">14:00-17:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/round-table.png"><p class="mu-event-time">17:00-18:00</p><h3>Round Tables</h3><span>Featuring Speakers &amp; OpenSIPS Team</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li></ul></div><div role="tabpanel" class="tab-pane fade mu-event-timeline " id="third-day"><ul><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">10:00-13:00</p><h3>Interactive Demos</h3><span>Workshops and Demos</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">14:00-17:00</p><h3>Interactive Demos</h3><span>Workshops and Demos</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li></ul></div><div role="tabpanel" class="tab-pane fade mu-event-timeline " id="fourth-day"><ul><li><div class="mu-single-event"><img src="assets/images/training.png"><p class="mu-event-time">9:00-17:00</p><h3>OpenSIPS Training</h3><span></span><p style="font-size:12px;text-align:left;margin-top:10px">The OpenSIPs Training will cover the new clustering capabilities of OpenSIPS 2.4 . The concept of this training course is to spend the day building from the ground up a fully operational OpenSIPS cluster for typical class 4 VoIP services.</p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/training.png"><p class="mu-event-time">09:00-17:00</p><h3>FreeSWITCH Training</h3><span></span><p style="font-size:12px;text-align:left;margin-top:10px">FreeSWITCH Training will cover the installation and configuration of FreeSWITCH. We will walk through making calls, administer various configurations, enable and utilize various modules. We'll also cover some additional functions of FreeSWITCH such as video call recording, video conferencing, Call Detail Recording, troubleshooting, logging, and interacting with Event Socket Library.</p></div></li></ul></div></div>
@@ -991,18 +942,14 @@
 
 	<script>
         var vm =new Vue({
-            el: '#app',
+            el: '#panelBodyApp',
             data: {
                 message: 'Hello Vue.js!',
 				confData :{}
             },
             methods: {
                 loadData: function (event) {
-                    // `this` inside methods point to the Vue instance
-                    alert('Hello ' + this.name + '!');
-                    // `event` is the native DOM event
-
-                    $.getJSON('data.json', function (dataJson){
+                      $.getJSON('data.json', function (dataJson){
                         console.log('dataJson',dataJson);
                         window.vm.confData= dataJson;
                        	});
