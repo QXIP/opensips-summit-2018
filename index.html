@@ -990,14 +990,30 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 	<script>
-        new Vue({
+        var vm =new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue.js!'
-            }
+                message: 'Hello Vue.js!',
+				confData :{}
+            },
+            methods: {
+                loadData: function (event) {
+                    // `this` inside methods point to the Vue instance
+                    alert('Hello ' + this.name + '!');
+                    // `event` is the native DOM event
+
+                    $.getJSON('data.json', function (dataJson){
+                        console.log('dataJson',dataJson);
+                        window.vm.confData= dataJson;
+                       	});
+                }
+
+
+
+			}
         });
 
-
+        vm.loadData();
 	</script>
   
        
