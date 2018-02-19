@@ -8,9 +8,4 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($ch, CURLOPT_TIMEOUT, 20);
 $content = trim(curl_exec($ch));
 curl_close($ch);
-~
-~
-~
-~
-~
-~
+?>
