@@ -231,18 +231,17 @@
 														<a data-toggle="collapse" data-parent="#accordion2" href="#collapse1" aria-expanded="false" class="collapsed">
 															<span class="fa fa-angle-down"></span> {{item.NAME}}
 															<i class="fa fa-info-circle pull-right"></i>
-															<span class="pull-right speaker-desc">{{item.speakerDESC}}</span>
+															<span class="pull-right speaker-desc">{{item.SPEECHTITLE}}</span>
 														</a>
 													</h4>
 												</div>
 												<div id="collapse1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
 													<div class="panel-body" >
-														<span class="speaker-speech-title">{{item.SPEECHTITLE}}</span>
 														<div class="speaker-speech-abstract">
 															{{item.SPEECHABSTRACT}}
 														</div>
 														<div class="clearfix speaker-text-wrap">
-															<img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu">
+															<img class="speaker-text-img" src="http://i.imgur.com/c0q8TjB.png" alt={{item.NAME}}>
 															<div class="speaker-text-desc">
 																<span class="speaker-text-title">{{item.NAME}}</span>
 																<span class="speaker-text-company">{{item.COMPANY}}</span>
