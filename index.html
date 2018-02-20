@@ -195,6 +195,8 @@
 		</section>
 		<!-- End Video -->
 
+		
+		<section id="vuedynamic">
 		<!-- Start Schedule  -->
 		<section id="mu-schedule">
 			<div class="container">
@@ -241,7 +243,7 @@
 															{{item.SPEECHABSTRACT}}
 														</div>
 														<div class="clearfix speaker-text-wrap">
-															<img class="speaker-text-img" v-bind:src="item.TEXTIMG" alt={{item.NAME}}>
+															<img class="speaker-text-img" v-bind:src="item.TEXTIMG" :alt="item.NAME">
 															<div class="speaker-text-desc">
 																<span class="speaker-text-title">{{item.NAME}}</span>
 																<span class="speaker-text-company">{{item.COMPANY}}</span>
@@ -308,10 +310,181 @@
 							</div>
 
 							<!-- Start Speakers Content -->
-                            <div class="mu-speakers-content">
-
-                                <div class="mu-speakers-slider slick-initialized slick-slider"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button><div aria-live="polite" class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5700px; transform: translate3d(-1140px, 0px, 0px);" role="listbox"><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/4rfCiZB.png" alt="Lorenzo Miniero" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Lorenzo Miniero <a href="https://twitter.com/@elminiero" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Co-Founder @Meetecho</p><p>Troubleshooting and monitoring Janus: a HEPIC journey!</p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/F83gMim.png" alt="Alexandr Dubovikov" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Alexandr Dubovikov <a href="https://twitter.com/@sipcapture" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>CTO @QXIP</p><p></p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/heUiUgH.jpg?1" alt="Giovanni Maruzzelli" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Giovanni Maruzzelli <a href="https://twitter.com/@gmaruzz" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>OpenTelecom.it</p><p>FreeSWITCH clustering with OpenSIPS (done well)</p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png" alt="Maxim Sobolev" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Maxim Sobolev <a href="https://twitter.com/@sobomax" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Sippy Software, Inc.</p><p>SIP in the age of IoT</p></div></div><div class="mu-single-speakers slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide00"><img src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Bogdan Andrei Iancu <a href="https://twitter.com/@opensips" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>OpenSIPS Founder</p><p>OpenSIPS Keynote</p></div></div><div class="mu-single-speakers slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide01"><img src="http://i.imgur.com/LmSk7gI.jpg" alt="Liviu Chircu" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Liviu Chircu <a href="https://twitter.com/@liviuchircu" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Sr. OpenSIPS Developer</p><p></p></div></div><div class="mu-single-speakers slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide02"><img src="http://i.imgur.com/YbMlg4m.png" alt="Razvan Crainea" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Razvan Crainea <a href="https://twitter.com/@razvancrainea" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Sr. OpenSIPS Developer</p><p></p></div></div><div class="mu-single-speakers slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide03"><img src="http://i.imgur.com/FvHRqNc.png" alt="Alex Goulis" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Alex Goulis <a href="https://twitter.com/@ratetel" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>CEO @RateTel</p><p></p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="4" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide04"><img src="http://i.imgur.com/XJS0Ihj.png" alt="Lorenzo Mangani" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Lorenzo Mangani <a href="https://twitter.com/@qxip" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>CEO @QXIP</p><p>HEP in NodeJS</p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="5" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide05"><img src="https://user-images.githubusercontent.com/1423657/31589533-a7cf4f5e-b203-11e7-8a52-bf2f2cfdf72a.png" alt="Peter Kelly" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Peter Kelly <a href="https://twitter.com/@p3k4y" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>CEO @SourceVox</p><p></p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="6" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide06"><img src="http://i.imgur.com/5PS7U7r.png" alt="Flavio Goncalves" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Flavio Goncalves <a href="https://twitter.com/@SipPulse" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>CEO @SIPPulse</p><p></p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="7" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide07"><img src="http://i.imgur.com/2D2AjWr.png" alt="Dan Christian Bogos" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Dan Christian Bogos <a href="https://twitter.com/@danbogos" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Founder @CGRates</p><p></p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="8" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide08"><img src="http://i.imgur.com/4rfCiZB.png" alt="Lorenzo Miniero" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Lorenzo Miniero <a href="https://twitter.com/@elminiero" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Co-Founder @Meetecho</p><p>Troubleshooting and monitoring Janus: a HEPIC journey!</p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="9" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide09"><img src="http://i.imgur.com/F83gMim.png" alt="Alexandr Dubovikov" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Alexandr Dubovikov <a href="https://twitter.com/@sipcapture" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>CTO @QXIP</p><p></p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="10" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide010"><img src="http://i.imgur.com/heUiUgH.jpg?1" alt="Giovanni Maruzzelli" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Giovanni Maruzzelli <a href="https://twitter.com/@gmaruzz" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>OpenTelecom.it</p><p>FreeSWITCH clustering with OpenSIPS (done well)</p></div></div><div class="mu-single-speakers slick-slide" data-slick-index="11" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide011"><img src="http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png" alt="Maxim Sobolev" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Maxim Sobolev <a href="https://twitter.com/@sobomax" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Sippy Software, Inc.</p><p>SIP in the age of IoT</p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Bogdan Andrei Iancu <a href="https://twitter.com/@opensips" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>OpenSIPS Founder</p><p>OpenSIPS Keynote</p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/LmSk7gI.jpg" alt="Liviu Chircu" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Liviu Chircu <a href="https://twitter.com/@liviuchircu" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Sr. OpenSIPS Developer</p><p></p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/YbMlg4m.png" alt="Razvan Crainea" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Razvan Crainea <a href="https://twitter.com/@razvancrainea" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>Sr. OpenSIPS Developer</p><p></p></div></div><div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 285px;" tabindex="-1"><img src="http://i.imgur.com/FvHRqNc.png" alt="Alex Goulis" style="width:200px;height:200px;"><div class="mu-single-speakers-info"><h3>Alex Goulis <a href="https://twitter.com/@ratetel" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3><p>CEO @RateTel</p><p></p></div></div></div></div><button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button></div>
-                            </div>
+<div class="mu-speakers-content">
+   <div class="mu-speakers-slider slick-initialized slick-slider">
+      <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+      <div aria-live="polite" class="slick-list draggable">
+         <div class="slick-track" style="opacity: 1; width: 5700px; transform: translate3d(-1140px, 0px, 0px);" role="listbox">
+            
+			<!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/4rfCiZB.png" alt="Lorenzo Miniero" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Lorenzo Miniero <a href="https://twitter.com/@elminiero" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Co-Founder @Meetecho</p> -->
+                  <!-- <p>Troubleshooting and monitoring Janus: a HEPIC journey!</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/F83gMim.png" alt="Alexandr Dubovikov" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Alexandr Dubovikov <a href="https://twitter.com/@sipcapture" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>CTO @QXIP</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/heUiUgH.jpg?1" alt="Giovanni Maruzzelli" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Giovanni Maruzzelli <a href="https://twitter.com/@gmaruzz" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>OpenTelecom.it</p> -->
+                  <!-- <p>FreeSWITCH clustering with OpenSIPS (done well)</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png" alt="Maxim Sobolev" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Maxim Sobolev <a href="https://twitter.com/@sobomax" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Sippy Software, Inc.</p> -->
+                  <!-- <p>SIP in the age of IoT</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide00"> -->
+               <!-- <img src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Bogdan Andrei Iancu <a href="https://twitter.com/@opensips" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>OpenSIPS Founder</p> -->
+                  <!-- <p>OpenSIPS Keynote</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide01"> -->
+               <!-- <img src="http://i.imgur.com/LmSk7gI.jpg" alt="Liviu Chircu" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Liviu Chircu <a href="https://twitter.com/@liviuchircu" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Sr. OpenSIPS Developer</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide02"> -->
+               <!-- <img src="http://i.imgur.com/YbMlg4m.png" alt="Razvan Crainea" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Razvan Crainea <a href="https://twitter.com/@razvancrainea" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Sr. OpenSIPS Developer</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide03"> -->
+               <!-- <img src="http://i.imgur.com/FvHRqNc.png" alt="Alex Goulis" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Alex Goulis <a href="https://twitter.com/@ratetel" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>CEO @RateTel</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="4" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide04"> -->
+               <!-- <img src="http://i.imgur.com/XJS0Ihj.png" alt="Lorenzo Mangani" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Lorenzo Mangani <a href="https://twitter.com/@qxip" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>CEO @QXIP</p> -->
+                  <!-- <p>HEP in NodeJS</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="5" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide05"> -->
+               <!-- <img src="https://user-images.githubusercontent.com/1423657/31589533-a7cf4f5e-b203-11e7-8a52-bf2f2cfdf72a.png" alt="Peter Kelly" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Peter Kelly <a href="https://twitter.com/@p3k4y" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>CEO @SourceVox</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+			
+            <div v-for="(item,index) in confData.SPEAKERSSLIDE" class="mu-single-speakers slick-slide" :data-slick-index="index" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide06">
+               <img :src="item.TEXTIMAGE" :alt="item.NAME" style="width:200px;height:200px;">
+               <div class="mu-single-speakers-info">
+                  <h3>{{item.NAME}} <a :href="item.TWITTER" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3>
+                  <p>{{item.POSITION}}</p>
+                  <p>{{item.ABOUT}}</p>
+				  <p>{{item.MOREABOUT}}</p>
+				  
+               </div>
+            </div>
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="7" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide07"> -->
+               <!-- <img src="http://i.imgur.com/2D2AjWr.png" alt="Dan Christian Bogos" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Dan Christian Bogos <a href="https://twitter.com/@danbogos" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Founder @CGRates</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="8" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide08"> -->
+               <!-- <img src="http://i.imgur.com/4rfCiZB.png" alt="Lorenzo Miniero" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Lorenzo Miniero <a href="https://twitter.com/@elminiero" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Co-Founder @Meetecho</p> -->
+                  <!-- <p>Troubleshooting and monitoring Janus: a HEPIC journey!</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="9" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide09"> -->
+               <!-- <img src="http://i.imgur.com/F83gMim.png" alt="Alexandr Dubovikov" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Alexandr Dubovikov <a href="https://twitter.com/@sipcapture" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>CTO @QXIP</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="10" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide010"> -->
+               <!-- <img src="http://i.imgur.com/heUiUgH.jpg?1" alt="Giovanni Maruzzelli" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Giovanni Maruzzelli <a href="https://twitter.com/@gmaruzz" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>OpenTelecom.it</p> -->
+                  <!-- <p>FreeSWITCH clustering with OpenSIPS (done well)</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide" data-slick-index="11" aria-hidden="true" style="width: 285px;" tabindex="-1" role="option" aria-describedby="slick-slide011"> -->
+               <!-- <img src="http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png" alt="Maxim Sobolev" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Maxim Sobolev <a href="https://twitter.com/@sobomax" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Sippy Software, Inc.</p> -->
+                  <!-- <p>SIP in the age of IoT</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/c0q8TjB.png" alt="Bogdan Andrei Iancu" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Bogdan Andrei Iancu <a href="https://twitter.com/@opensips" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>OpenSIPS Founder</p> -->
+                  <!-- <p>OpenSIPS Keynote</p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/LmSk7gI.jpg" alt="Liviu Chircu" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Liviu Chircu <a href="https://twitter.com/@liviuchircu" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Sr. OpenSIPS Developer</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/YbMlg4m.png" alt="Razvan Crainea" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Razvan Crainea <a href="https://twitter.com/@razvancrainea" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>Sr. OpenSIPS Developer</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="mu-single-speakers slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 285px;" tabindex="-1"> -->
+               <!-- <img src="http://i.imgur.com/FvHRqNc.png" alt="Alex Goulis" style="width:200px;height:200px;"> -->
+               <!-- <div class="mu-single-speakers-info"> -->
+                  <!-- <h3>Alex Goulis <a href="https://twitter.com/@ratetel" target="_blank" tabindex="-1"><i class="fa fa-twitter"></i></a></h3> -->
+                  <!-- <p>CEO @RateTel</p> -->
+                  <!-- <p></p> -->
+               <!-- </div> -->
+            <!-- </div> -->
+         </div>
+      </div>
+      <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+   </div>
+</div>
+							
 							<!-- End Speakers Content -->
 
 						</div>
@@ -320,7 +493,7 @@
 			</div>
 		</section>
 		<!-- End Speakers -->
-
+		</section>
 		<!-- Start Venue -->
 		<section id="mu-venue">
 			<div class="mu-venue-area">
@@ -912,21 +1085,28 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
 
 	<script>
+
         var vm =new Vue({
-            el: '#panelBodyApp',
+            el: '#vuedynamic',
             data: {
                 message: 'Hello Vue.js!',
-				confData :{ SPEAKERS:[]},
-				confData1 :{ SPEAKERS:[]},
+				confData :{ SPEAKERS:[],SPEAKERSSLIDE:[]},
+				
             },
             methods: {
                 loadData: function (event) {
+				
+				
+	
+				
+				
                       $.getJSON('data.json', function (dataJson){
                         console.log('dataJson',dataJson);
 						
 						
 						
-						
+						window.vm.confData.SPEAKERSSLIDE = dataJson.SPEAKERSSLIDE;
+						//console.log("speakersslide",window.vm.confData.SPEAKERSSLIDE);
 						var speakersLength = dataJson.SPEAKERS.length;
 						for (var i = 0 ; i < speakersLength ; i++)
 						{
