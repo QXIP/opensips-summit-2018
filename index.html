@@ -141,7 +141,7 @@
 									<div class="mu-about-right">
 										<h2>Next Stop</h2><h1>OpenSIPS Summit</h1>
 
-											<p id="app">{{ message }}</p>
+											
 
 										<p>Join fellow VoIP & RTC experts, developers and users from all over the world for <b>3+1</b> days of talks, 
 										   inspiring presentations, workshops and trainings about <b>OpenSIPS</b> and the <b>Open-Source</b> ecosystem <i>(Freeswitch, Asterisk, Homer, Janus and many more)</i></p>
@@ -318,59 +318,19 @@
                             <div class="clearfix">
                                 <div class="flexslider carousel">
                                     <ul class="slides">
-                                        <li>
-                                            <img src="http://i.imgur.com/c0q8TjB.png" />
-                                            <div class="mu-single-speakers-info">
+										<li v-for="(item,index) in confData.SPEAKERSSLIDE">
+											<img :src="item.TEXTIMAGE" :alt="item.NAME" style="width:200px;height:200px;"/>
+											 <div class="mu-single-speakers-info">
                                                 <h3>
-                                                    Bogdan Andrei Iancu
-                                                    <a href="https://twitter.com/@opensips" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a>
-                                                </h3><p>OpenSIPS Founder</p><p>OpenSIPS Keynote</p>
+                                                    {{item.NAME}}
+                                                    <a :href="item.TWITTER" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a>
+                                                </h3><p>{{item.POSITION}}</p><p>{{item.ABOUT}}</p><p>{{item.MOREABOUT}}</p>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/LmSk7gI.jpg" />
-                                            <div class="mu-single-speakers-info"><h3>Liviu Chircu <a href="https://twitter.com/@liviuchircu" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Sr. OpenSIPS Developer</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/YbMlg4m.png" />
-                                            <div class="mu-single-speakers-info"><h3>Razvan Crainea <a href="https://twitter.com/@razvancrainea" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Sr. OpenSIPS Developer</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/FvHRqNc.png" />
-                                            <div class="mu-single-speakers-info"><h3>Alex Goulis <a href="https://twitter.com/@ratetel" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>CEO @RateTel</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/XJS0Ihj.png" />
-                                            <div class="mu-single-speakers-info"><h3>Lorenzo Mangani <a href="https://twitter.com/@qxip" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>CEO @QXIP</p><p>HEP in NodeJS</p></div>
-                                        </li>
-                                        <li>
-                                            <img src="https://user-images.githubusercontent.com/1423657/31589533-a7cf4f5e-b203-11e7-8a52-bf2f2cfdf72a.png" />
-                                            <div class="mu-single-speakers-info"><h3>Peter Kelly <a href="https://twitter.com/@p3k4y" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>CEO @SourceVox</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/5PS7U7r.png" />
-                                            <div class="mu-single-speakers-info"><h3>Flavio Goncalves <a href="https://twitter.com/@SipPulse" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>CEO @SIPPulse</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/2D2AjWr.png" />
-                                            <div class="mu-single-speakers-info"><h3>Dan Christian Bogos <a href="https://twitter.com/@danbogos" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Founder @CGRates</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/4rfCiZB.png" />
-                                            <div class="mu-single-speakers-info"><h3>Lorenzo Miniero <a href="https://twitter.com/@elminiero" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Co-Founder @Meetecho</p><p>Troubleshooting and monitoring Janus: a HEPIC journey!</p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/F83gMim.png" />
-                                            <div class="mu-single-speakers-info"><h3>Alexandr Dubovikov <a href="https://twitter.com/@sipcapture" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>CTO @QXIP</p><p></p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://i.imgur.com/heUiUgH.jpg?1" />
-                                            <div class="mu-single-speakers-info"><h3>Giovanni Maruzzelli <a href="https://twitter.com/@gmaruzz" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>OpenTelecom.it</p><p>FreeSWITCH clustering with OpenSIPS (done well)</p></div>
-                                        </li>
-                                        <li>
-                                            <img src="http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png" />
-                                            <div class="mu-single-speakers-info"><h3>Maxim Sobolev <a href="https://twitter.com/@sobomax" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a></h3><p>Sippy Software, Inc.</p><p>SIP in the age of IoT</p></div>
-                                        </li>
+										
+										</li>
+									
+									
+                                       
                                     </ul>
                                 </div>
                             </div>

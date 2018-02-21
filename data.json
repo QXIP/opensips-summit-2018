@@ -75,33 +75,33 @@
 	"SPEAKERSSLIDE": [
 
 		{
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Bogdan Andrei Iancu",
+			"TEXTIMAGE": "http://i.imgur.com/c0q8TjB.png",
 			
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@opensips",
+			"POSITION": "OpenSIPS Founder",
+			"ABOUT": "OpenSIPS Keynote",
+			"MOREABOUT": ""
 		},
 
 		{
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Liviu Chircu",
+			"TEXTIMAGE": "http://i.imgur.com/LmSk7gI.jpg",
 			
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@liviuchircu",
+			"POSITION": "Sr. OpenSIPS Developer",
+			"ABOUT": "",
+			"MOREABOUT": ""
 		},
 
 		{
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Razvan Crainea",
+			"TEXTIMAGE": "http://i.imgur.com/YbMlg4m.png",
 		
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@razvancrainea",
+			"POSITION": "OpenSIPS Developer",
+			"ABOUT": "",
+			"MOREABOUT": ""
 		},
 
 		{
@@ -111,54 +111,81 @@
 			"TWITTER": "https://twitter.com/@elminiero",
 			"POSITION": "Co-Founder @Meetecho",
 			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"MOREABOUT": ""
 		},
 
 		{
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Alex Goulis",
+			"TEXTIMAGE": "http://i.imgur.com/FvHRqNc.png",
 	
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@ratetel",
+			"POSITION": "CEO @RateTel",
+			"ABOUT": " ",
+			"MOREABOUT": ""
 		},
 		{
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Lorenzo Mangani",
+			"TEXTIMAGE": "http://i.imgur.com/XJS0Ihj.png",
 	
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@qxip",
+			"POSITION": "CEO @QXIP",
+			"ABOUT": "",
+			"MOREABOUT": ""
 		},
 		{
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Peter Kelly",
+			"TEXTIMAGE": "https://user-images.githubusercontent.com/1423657/31589533-a7cf4f5e-b203-11e7-8a52-bf2f2cfdf72a.png",
 		
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@p3k4y",
+			"POSITION": "CEO @SourceVox",
+			"ABOUT": "",
+			"MOREABOUT": ""
 		},
 {
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Flavio Goncalves",
+			"TEXTIMAGE": "http://i.imgur.com/5PS7U7r.png",
 	
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
+			"TWITTER": "https://twitter.com/@SipPulse",
+			"POSITION": "CEO @SIPPulse",
+			"ABOUT": "",
+			"MOREABOUT": ""
 		},
 {
-			"NAME": "Lorenzo Miniero",
-			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+			"NAME": "Dan Christian Bogoso",
+			"TEXTIMAGE": "http://i.imgur.com/2D2AjWr.png",
 		
-			"TWITTER": "https://twitter.com/@elminiero",
-			"POSITION": "Co-Founder @Meetecho",
-			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
-			"MOREABOUT": "Something"
-		}
+			"TWITTER": "https://twitter.com/@danbogos",
+			"POSITION": "Founder @CGRates",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Alexandr Dubovikov",
+			"TEXTIMAGE": "http://i.imgur.com/F83gMim.png",
+	
+			"TWITTER": "https://twitter.com/@sipcapture",
+			"POSITION": "CTO @QXIP",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Giovanni Maruzzelli ",
+			"TEXTIMAGE": "http://i.imgur.com/heUiUgH.jpg?1",
+	
+			"TWITTER": "https://twitter.com/@gmaruzz",
+			"POSITION": "OpenTelecom.it",
+			"ABOUT": "FreeSWITCH clustering with OpenSIPS",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Maxim Sobolev",
+			"TEXTIMAGE": "http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png",
+	
+			"TWITTER": "https://twitter.com/@sobomax",
+			"POSITION": "Sippy Software, Inc.",
+			"ABOUT": "SIP in the age of IoT",
+			"MOREABOUT": ""
+		}	
 
 	
 
