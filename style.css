@@ -1991,3 +1991,9 @@ button:focus {
 .speaker-speech-abstract{
     margin-bottom: 25px;
 }
+
+.flexslider h3 {
+    margin-bottom: 4px;
+    font-size: 22px;
+    text-align: left;
+}
