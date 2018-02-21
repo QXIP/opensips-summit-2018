@@ -318,13 +318,13 @@
                             <div class="clearfix">
                                 <div class="flexslider carousel">
                                     <ul class="slides">
-										<li v-for="(item,index) in confData.SPEAKERSSLIDE">
-											<img :src="item.TEXTIMAGE" :alt="item.NAME" style="width:200px;height:200px;"/>
+										<li v-for="(item,index) in confData.SPEAKERS">
+											<img :src="item.TEXTIMG" :alt="item.NAME" style="width:200px;height:200px;"/>
 											 <div class="mu-single-speakers-info">
                                                 <h3>
                                                     {{item.NAME}}
                                                     <a :href="item.TWITTER" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a>
-                                                </h3><p>{{item.POSITION}}</p><p>{{item.ABOUT}}</p><p>{{item.MOREABOUT}}</p>
+                                                </h3><p>{{item.COMPANY}}</p><p>{{item.POSITION}}</p>
                                             </div>
 										
 										</li>
@@ -939,7 +939,7 @@
             el: '#vuedynamic',
             data: {
                 message: 'Hello Vue.js!',
-				confData :{ SPEAKERS:[],SPEAKERSSLIDE:[]},
+				confData :{ SPEAKERS:[]},
 				
             },
             methods: {
@@ -954,7 +954,7 @@
 						
 						
 						
-						window.vm.confData.SPEAKERSSLIDE = dataJson.SPEAKERSSLIDE;
+						//window.vm.confData.SPEAKERSSLIDE = dataJson.SPEAKERSSLIDE;
 						//console.log("speakersslide",window.vm.confData.SPEAKERSSLIDE);
 						var speakersLength = dataJson.SPEAKERS.length;
 						for (var i = 0 ; i < speakersLength ; i++)
