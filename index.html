@@ -323,7 +323,7 @@
 											 <div class="mu-single-speakers-info">
                                                 <h3>
                                                     {{item.NAME}}
-                                                    <a :href="item.TWITTER" target="_blank" tabindex="0"><i class="fa fa-twitter"></i></a>
+                                                    <a :href="item.TWITTER" target="_blank" tabindex="0"><i :class="item.TWITTERclass"></i></a>
                                                 </h3><p>{{item.COMPANY}}</p><p>{{item.POSITION}}</p>
                                             </div>
 										
@@ -959,11 +959,30 @@
 						var speakersLength = dataJson.SPEAKERS.length;
 						for (var i = 0 ; i < speakersLength ; i++)
 						{
+						
+						
+						
 							if (dataJson.SPEAKERS[i].NAME != "")
 							{
+								if (dataJson.SPEAKERS[i].TEXTIMG === "")
+								{
+								dataJson.SPEAKERS[i].TEXTIMG = "https://i.imgur.com/k7tFmrV.png";
+								}
+							
+								if (dataJson.SPEAKERS[i].TWITTER === "")
+								{
+									dataJson.SPEAKERS[i].TWITTERclass = "hidden";
+								}
+								else
+								{
+									dataJson.SPEAKERS[i].TWITTERclass = "fa fa-twitter";
+								}
 								window.vm.confData.SPEAKERS.push(dataJson.SPEAKERS[i]);
-								console.log(dataJson.SPEAKERS[i]);
+								console.log("up speakers",dataJson.SPEAKERS[i]);
 							}
+							
+							
+							
 						}
 						
 						console.log("last",window.vm.confData,  dataJson);
