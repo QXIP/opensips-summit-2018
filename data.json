@@ -1,0 +1,195 @@
+{
+	"SPEAKERS": [{
+		"NAME": "Bogdan-Andrei Iancu",
+		"speakerDESC": "Some description",
+		"SPEECHTITLE": "Key Notes - An introduction in OpenSIPS 2.4",
+		"SPEECHABSTRACT": " OpenSIPS 2.3 version.....",
+		"TEXTIMG": "http://i.imgur.com/c0q8TjB.png",
+		"TEXTTITLE": "Bogdan-Andrei Iancu",
+		"COMPANY": "OpenSIPS Project",
+		"DESC": "Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs."
+	}, {
+		"NAME": "David Duffett",
+		"speakerDESC": "Some description",
+		"SPEECHTITLE": "Asterisk Update",
+		"SPEECHABSTRACT": "Attend this session to hear the latest news from the Asterisk project, now at version 15.x",
+		"TEXTIMG": "https://secure.gravatar.com/avatar/c104436f064ea8d6eeb3038bf0127c1a?s=500",
+		"TEXTTITLE": "",
+		"COMPANY": "Digium Inc.",
+		"DESC": "Asterisk is the most popular open source IP telephony engine in the world today. With the addition of adaptors (that come in a range of shapes and sizes) Asterisk can be connected to most legacy PSTN interfaces like PRI, BRI, and FXO connections in addition to IP telephony protocols SIP and IAX2, which are natively supported."
+	}, {
+		"NAME": "",
+		"speakerDESC": "",
+		"SPEECHTITLE": "",
+		"SPEECHABSTRACT": "",
+		"TEXTIMG": "",
+		"TEXTTITLE": "",
+		"COMPANY": "",
+		"DESC": "Although Asterisk is an immensely flexible and powerful telephony engine, and application development evironment, it does get used - for the majority of implementations - as an IP PBX and, as such, has all the features you would expect in a world class telephony solution - and lots you wouldn't expect too!"
+	}, {
+		"NAME": "",
+		"speakerDESC": "",
+		"SPEECHTITLE": "",
+		"SPEECHABSTRACT": "",
+		"TEXTIMG": "",
+		"TEXTTITLE": "",
+		"COMPANY": "",
+		"DESC": "The instant availability of Asterisk along with the aforementioned power and flexibility see Asterisk getting into all sort of unorthodox telephony applications."
+	}, {
+		"NAME": "",
+		"speakerDESC": "",
+		"SPEECHTITLE": "",
+		"SPEECHABSTRACT": "",
+		"TEXTIMG": "",
+		"TEXTTITLE": "",
+		"COMPANY": "",
+		"DESC": "Consultants that really know Asterisk need virtually never to say no to a request based on telephony functionality."
+	}, {
+		"NAME": "",
+		"speakerDESC": "",
+		"SPEECHTITLE": "",
+		"SPEECHABSTRACT": "",
+		"TEXTIMG": "",
+		"TEXTTITLE": "",
+		"COMPANY": "",
+		"DESC": "I am responsible for fostering worldwide growth and adoption of open source Asterisk among developers, partners and commercial entities."
+	}, {
+		"NAME": "",
+		"speakerDESC": "",
+		"SPEECHTITLE": "",
+		"SPEECHABSTRACT": "",
+		"TEXTIMG": "",
+		"TEXTTITLE": "",
+		"COMPANY": "",
+		"DESC": "This includes regular communication and meeting with the community, through live events and online media."
+	}, {
+		"NAME": "",
+		"speakerDESC": "",
+		"SPEECHTITLE": "",
+		"SPEECHABSTRACT": "",
+		"TEXTIMG": "",
+		"TEXTTITLE": "",
+		"COMPANY": "",
+		"DESC": "I feel privileged and hounoured to be involved in the Asterisk community."
+	}],
+	"SPEAKERSSLIDE": [
+
+		{
+			"NAME": "Bogdan Andrei Iancu",
+			"TEXTIMAGE": "http://i.imgur.com/c0q8TjB.png",
+			
+			"TWITTER": "https://twitter.com/@opensips",
+			"POSITION": "OpenSIPS Founder",
+			"ABOUT": "OpenSIPS Keynote",
+			"MOREABOUT": ""
+		},
+
+		{
+			"NAME": "Liviu Chircu",
+			"TEXTIMAGE": "http://i.imgur.com/LmSk7gI.jpg",
+			
+			"TWITTER": "https://twitter.com/@liviuchircu",
+			"POSITION": "Sr. OpenSIPS Developer",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+
+		{
+			"NAME": "Razvan Crainea",
+			"TEXTIMAGE": "http://i.imgur.com/YbMlg4m.png",
+		
+			"TWITTER": "https://twitter.com/@razvancrainea",
+			"POSITION": "OpenSIPS Developer",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+
+		{
+			"NAME": "Lorenzo Miniero",
+			"TEXTIMAGE": "http://i.imgur.com/4rfCiZB.png",
+	
+			"TWITTER": "https://twitter.com/@elminiero",
+			"POSITION": "Co-Founder @Meetecho",
+			"ABOUT": "Troubleshooting and monitoring Janus: a HEPIC journey!",
+			"MOREABOUT": ""
+		},
+
+		{
+			"NAME": "Alex Goulis",
+			"TEXTIMAGE": "http://i.imgur.com/FvHRqNc.png",
+	
+			"TWITTER": "https://twitter.com/@ratetel",
+			"POSITION": "CEO @RateTel",
+			"ABOUT": " ",
+			"MOREABOUT": ""
+		},
+		{
+			"NAME": "Lorenzo Mangani",
+			"TEXTIMAGE": "http://i.imgur.com/XJS0Ihj.png",
+	
+			"TWITTER": "https://twitter.com/@qxip",
+			"POSITION": "CEO @QXIP",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+		{
+			"NAME": "Peter Kelly",
+			"TEXTIMAGE": "https://user-images.githubusercontent.com/1423657/31589533-a7cf4f5e-b203-11e7-8a52-bf2f2cfdf72a.png",
+		
+			"TWITTER": "https://twitter.com/@p3k4y",
+			"POSITION": "CEO @SourceVox",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Flavio Goncalves",
+			"TEXTIMAGE": "http://i.imgur.com/5PS7U7r.png",
+	
+			"TWITTER": "https://twitter.com/@SipPulse",
+			"POSITION": "CEO @SIPPulse",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Dan Christian Bogoso",
+			"TEXTIMAGE": "http://i.imgur.com/2D2AjWr.png",
+		
+			"TWITTER": "https://twitter.com/@danbogos",
+			"POSITION": "Founder @CGRates",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Alexandr Dubovikov",
+			"TEXTIMAGE": "http://i.imgur.com/F83gMim.png",
+	
+			"TWITTER": "https://twitter.com/@sipcapture",
+			"POSITION": "CTO @QXIP",
+			"ABOUT": "",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Giovanni Maruzzelli ",
+			"TEXTIMAGE": "http://i.imgur.com/heUiUgH.jpg?1",
+	
+			"TWITTER": "https://twitter.com/@gmaruzz",
+			"POSITION": "OpenTelecom.it",
+			"ABOUT": "FreeSWITCH clustering with OpenSIPS",
+			"MOREABOUT": ""
+		},
+{
+			"NAME": "Maxim Sobolev",
+			"TEXTIMAGE": "http://sobomax.sippysoft.com/2efb44_9d016a626c1b0fded8397399c5401f6b.png",
+	
+			"TWITTER": "https://twitter.com/@sobomax",
+			"POSITION": "Sippy Software, Inc.",
+			"ABOUT": "SIP in the age of IoT",
+			"MOREABOUT": ""
+		}	
+
+	
+
+
+	]
+
+}
