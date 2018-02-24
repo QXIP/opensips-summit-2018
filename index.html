@@ -229,48 +229,40 @@
                                         <div class="panel-group" id="accordion2" >
                                             <br />
                                             <br />
-                                            <br />
 
                                             <div class="panel panel-default" v-for="(item, index) in confData.SPEAKERS" >
-												<div class="panel-heading">
-													<h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#accordion2" v-bind:href="'#collapse'+index+1" aria-expanded="false" class="collapsed">
-															<span class="fa fa-angle-down"></span> {{item.NAME}}
-															<i class="fa fa-info-circle pull-right"></i>
-															<span class="pull-right speaker-desc">{{item.SPEECHTITLE}}</span>
-														</a>
-													</h4>
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion2" v-bind:href="'#collapse'+index+1" aria-expanded="false" class="collapsed">
+												<span class="fa fa-angle-down"></span> {{item.NAME}}
+												<i class="fa fa-info-circle pull-right"></i>
+												<span class="pull-right speaker-desc">{{item.SPEECHTITLE}}</span>
+											</a>
+										</h4>
+									</div>
+									<div v-bind:id="'collapse'+index+1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+										<div class="panel-body" >
+											<div class="speaker-speech-abstract">
+												{{item.SPEECHABSTRACT}}
+											</div>
+											<div class="clearfix speaker-text-wrap">
+												<img class="speaker-text-img" v-bind:src="item.TEXTIMG" :alt="item.NAME">
+												<div class="speaker-text-desc">
+													<span class="speaker-text-title">{{item.NAME}}</span>
+													<span class="speaker-text-company">{{item.COMPANY}}</span>
+													{{item.DESC}}
 												</div>
-												<div v-bind:id="'collapse'+index+1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-													<div class="panel-body" >
-														<div class="speaker-speech-abstract">
-															{{item.SPEECHABSTRACT}}
-														</div>
-														<div class="clearfix speaker-text-wrap">
-															<img class="speaker-text-img" v-bind:src="item.TEXTIMG" :alt="item.NAME">
-															<div class="speaker-text-desc">
-																<span class="speaker-text-title">{{item.NAME}}</span>
-																<span class="speaker-text-company">{{item.COMPANY}}</span>
-																{{item.DESC}}
-															</div>
-														</div>
-													</div>
-												</div>
-                                            </div>
-											
-											
-						
-
-
-											<!-- Start Vue Printing  -->
-
+											</div>
+										</div>
+								</div>
+                                            </div>											
                                         </div>
                                     </div>
 
 				<!-- Daily Agenda -->
-
-				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="{{ day.id }}" v-for="(day, index) in confData.schedule">
-					    <ul v-for="(item) in items">
+				    <div v-for="(day, index) in confData.schedule">{{ day.id }}
+				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="{{ day.id }}">
+					    <ul v-for="(item,pos) in items">
 						<li>
 						<div class="mu-single-event">
 							<img src="{{ item.icon }}">
@@ -282,6 +274,7 @@
 						</li>		
 					    </ul>
 				    	</div>
+			    	    </div>
 
                             </div>
 							
