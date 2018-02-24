@@ -2,7 +2,7 @@ var conference = {
     speakers: [
 	{
             "id": 1, "name": "Bogdan Andrei Iancu",
-            "title": "OpenSIPS Founder",
+            "title": "Founder",
             "image": "http://i.imgur.com/c0q8TjB.png",
             "twitter": "@opensips",
             "presentation": "OpenSIPS Keynote"
