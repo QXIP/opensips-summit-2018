@@ -89,13 +89,13 @@
          "POSITION":""
       },
       {
-         "NAME":"Lorenzi Mangani",
-         "SPEECHTITLE":"HEP in NodeJS",
-         "SPEECHABSTRACT":"TBD",
+         "NAME":"Lorenzo Mangani",
+         "SPEECHTITLE":"HOMER & OpenSIPS",
+         "SPEECHABSTRACT":"HOMER & OpenSIPS: A Match made in Heaven!",
          "TEXTIMG":"http://i.imgur.com/XJS0Ihj.png",
-         "TEXTTITLE":"Lorenzi Mangani",
+         "TEXTTITLE":"Lorenzo Mangani",
          "COMPANY":"QXIP",
-         "DESC":"",
+         "DESC":"Lorenzo is the Founder and CEO of QXIP BV, the Amsterdam based R&D developing HOMER, HEPIC, HEP and many other Monitoring and Packet Capture projects.",
          "TWITTER":"https://twitter.com/@qxip",
          "POSITION":"CEO"
       },
