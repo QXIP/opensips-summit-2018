@@ -9,7 +9,7 @@
          "COMPANY":"OpenSIPS Project",
          "DESC":"Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs.",
          "TWITTER":"https://twitter.com/@opensips",
-         "POSITION":"OpenSIPS Founder"
+         "POSITION":"Founder"
       },
       {
          "NAME":"David Duffett",
@@ -263,7 +263,7 @@
             "subtitle": "Venue Front-Desk", 
             "icon": "assets/images/lunch.png" },
           { "time": "9:30-13:00", 
-            "description": "Conference Day", 
+            "description": "First Conference Day", 
             "subtitle": "Speakers TBA", 
             "icon": "assets/images/speaker.png" },
           { "time": "13:00-14:00", 
@@ -284,7 +284,7 @@
         "active": "",
         "items": [ 
           { "time": "9:30-13:00", 
-            "description": "Conference Day", 
+            "description": "Second Conference Day", 
             "subtitle": "Speakers TBA", 
             "icon": "assets/images/speaker.png" },
           { "time": "13:00-14:00", 
