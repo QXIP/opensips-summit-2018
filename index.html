@@ -221,6 +221,7 @@
                                 </ul>
 
                                 <!-- Tab panes -->
+			    <div class="tab-content mu-schedule-content">
 
 				<!-- Speakers List -->
 
@@ -268,7 +269,7 @@
 
 				<!-- Daily Agenda -->
 
-				   <div v-for="(day, index) in confData.schedule" >
+				    <div v-for="(day, index) in confData.schedule" >
 				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="{{ day.id }}">
 					    <ul v-for="(item) in items">
 						<li>
@@ -282,13 +283,14 @@
 						</li>		
 					    </ul>
 				    	</div>
-				   </div>
+				    </div>
 
 
                             <!--    
 					<div role="tabpanel" class="tab-pane fade mu-event-timeline" id="first-day"><ul><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">8:30-9:30</p><h3>Registration &amp; Breakfast</h3><span>Venue Front-Desk</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">9:30-13:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">14:00-17:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/round-table.png"><p class="mu-event-time">17:00-18:00</p><h3>Round Tables</h3><span>Featuring Speakers &amp; OpenSIPS Team</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li></ul></div><div role="tabpanel" class="tab-pane fade mu-event-timeline " id="second-day"><ul><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">9:30-13:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">14:00-17:00</p><h3>Conference Day</h3><span>Speakers TBA</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/round-table.png"><p class="mu-event-time">17:00-18:00</p><h3>Round Tables</h3><span>Featuring Speakers &amp; OpenSIPS Team</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li></ul></div><div role="tabpanel" class="tab-pane fade mu-event-timeline " id="third-day"><ul><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">10:00-13:00</p><h3>Interactive Demos</h3><span>Workshops and Demos</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/speaker.png"><p class="mu-event-time">14:00-17:00</p><h3>Interactive Demos</h3><span>Workshops and Demos</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li></ul></div><div role="tabpanel" class="tab-pane fade mu-event-timeline " id="fourth-day"><ul><li><div class="mu-single-event"><img src="assets/images/training.png"><p class="mu-event-time">9:00-17:00</p><h3>OpenSIPS Training</h3><span></span><p style="font-size:12px;text-align:left;margin-top:10px">The OpenSIPs Training will cover the new clustering capabilities of OpenSIPS 2.4 . The concept of this training course is to spend the day building from the ground up a fully operational OpenSIPS cluster for typical class 4 VoIP services.</p></div></li><li><div class="mu-single-event"><img src="assets/images/lunch.png"><p class="mu-event-time">13:00-14:00</p><h3>Opensource Lunch</h3><span>Sponsored by OpenSIPS</span><p style="font-size:12px;text-align:left;margin-top:10px"></p></div></li><li><div class="mu-single-event"><img src="assets/images/training.png"><p class="mu-event-time">09:00-17:00</p><h3>FreeSWITCH Training</h3><span></span><p style="font-size:12px;text-align:left;margin-top:10px">FreeSWITCH Training will cover the installation and configuration of FreeSWITCH. We will walk through making calls, administer various configurations, enable and utilize various modules. We'll also cover some additional functions of FreeSWITCH such as video call recording, video conferencing, Call Detail Recording, troubleshooting, logging, and interacting with Event Socket Library.</p></div></li></ul></div></div>
 			    -->
 
+                            </div>
                             </div>
 							
 						</div>
