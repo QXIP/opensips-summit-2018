@@ -105,7 +105,8 @@ h5 {
 }
 
 h6 {  
-	font-size: 18px;  
+	font-size: 16px;  
+	color: #ABCC42;
 }
 
 img {
@@ -736,7 +737,7 @@ button:focus {
 }
 
 .mu-schedule-menu li a {
-	border-radius: 0;
+	border-radius: 10px;
 	margin: 0 10px;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
