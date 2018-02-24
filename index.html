@@ -39,7 +39,7 @@
     <![endif]-->
 	  
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-	  <script type="text/javascript" src="conference.js"></script>
+	  <!-- <script type="text/javascript" src="conference.js"></script> -->
 	  <script type="text/javascript" >
 	    document.addEventListener("DOMContentLoaded", ()=>{
  		console.log('See You in Amsterdam!');
@@ -222,7 +222,28 @@
                                 </ul>
 
                                 <!-- Tab panes -->
+
+				<!-- Daily Agenda -->
+
                                 <div class="tab-content mu-schedule-content----" id="panelBodyApp">
+				   <div v-for="(day, index) in confData.schedule" >
+				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="{{ day.id }}">
+					    <ul v-for="(item) in items">
+						<li>
+						<div class="mu-single-event">
+							<img src="{{ item.icon }}">
+							<p class="mu-event-time">{{ item.time }}</p>
+							<h3>{{ item.description }}</h3>
+							<span>{{ item.subtitle }}</span>		
+							<p style="font-size:12px;text-align:left;margin-top:10px">{{ item.text }}</p>
+						</div>
+						</li>		
+					    </ul>
+				    	</div>
+				   </div>
+
+				<!-- Speakers List -->
+
                                     <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="speakers-list123" >
                                         <div class="panel-group" id="accordion2" >
                                             <br />
