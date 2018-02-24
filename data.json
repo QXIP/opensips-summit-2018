@@ -280,7 +280,7 @@
             "icon": "assets/images/round-table.png" }
         ] 
       },
-      { id: "second-day", 
+      { "id": "second-day", 
         "active": "",
         "items": [ 
           { "time": "9:30-13:00", 
