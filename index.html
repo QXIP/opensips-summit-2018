@@ -260,8 +260,8 @@
                                     </div>
 
 				<!-- Daily Agenda -->
-				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="day.id || id" 
-							     v-for="(day, index) in confData.schedule" :key="day.id">
+				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" 
+							     v-for="(day, index) in confData.schedule" :id="day.id" :key="day.id">
 					    <ul v-for="(item) in day.items">
 						<li>
 						<div class="mu-single-event">
