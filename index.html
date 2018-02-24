@@ -936,28 +936,24 @@
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="assets/js/app.js"></script>
 
-	<script>
-
+	<script type="text/javascript">
         var vm =new Vue({
             el: '#vuedynamic',
             data: {
                 message: 'Hello Vue.js!',
-				confData :{ SPEAKERS:[], schedule: [], sponsors: [] },				
+				confData :{ SPEAKERS:[], schedule: [], sponsors: [] }
             },
             methods: {
                 loadData: function (event) {
 				
                       $.getJSON('data.json', function (dataJson){
                         console.log('dataJson',dataJson);
-						
+						window.vm.confData = dataJson;									
 						//window.vm.confData.SPEAKERSSLIDE = dataJson.SPEAKERSSLIDE;
 						//console.log("speakersslide",window.vm.confData.SPEAKERSSLIDE);
 						var speakersLength = dataJson.SPEAKERS.length;
 						for (var i = 0 ; i < speakersLength ; i++)
 						{
-						
-						
-						
 							if (dataJson.SPEAKERS[i].NAME != "")
 							{
 								if (dataJson.SPEAKERS[i].TEXTIMG === "")
@@ -974,28 +970,17 @@
 									dataJson.SPEAKERS[i].TWITTERclass = "fa fa-twitter";
 								}
 								window.vm.confData.SPEAKERS.push(dataJson.SPEAKERS[i]);
-								console.log("up speakers",dataJson.SPEAKERS[i]);
+								// console.log("up speakers",dataJson.SPEAKERS[i]);
 							}
-							
-							
-							
-						}
-						
+						}			
 						console.log("last",window.vm.confData,  dataJson);
                        	});
                 }
-
-
-
-			}
+	    }
         });
 
         vm.loadData();
-	</script>
-  
-       
-	
-    <!-- Custom js -->
+	</script>  
 	<script type="text/javascript" src="assets/js/custom.js"></script>
     <script src="assets/js/jquery.flexslider-min.js"></script>
 	<script>
