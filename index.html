@@ -225,7 +225,7 @@
 
 				<!-- Speakers List -->
 
-                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="speakers-list123" >
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="speakers-list123" >
                                         <div class="panel-group" id="accordion2" >
                                             <br />
                                             <br />
@@ -260,7 +260,8 @@
                                     </div>
 
 				<!-- Daily Agenda -->
-				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="{{ day.id }}" v-for="(day, index) in confData.schedule">
+				    	<div role="tabpanel" class="tab-pane fade mu-event-timeline {{ day.active }}" id="day.id || id" 
+							     v-for="(day, index) in confData.schedule" :key="day.id">
 					    <ul v-for="(item) in day.items">
 						<li>
 						<div class="mu-single-event">
