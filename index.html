@@ -942,20 +942,13 @@
             el: '#vuedynamic',
             data: {
                 message: 'Hello Vue.js!',
-				confData :{ SPEAKERS:[]},
-				
+				confData :{ SPEAKERS:[], schedule: [], sponsors: [] },				
             },
             methods: {
                 loadData: function (event) {
 				
-				
-	
-				
-				
                       $.getJSON('data.json', function (dataJson){
                         console.log('dataJson',dataJson);
-						
-						
 						
 						//window.vm.confData.SPEAKERSSLIDE = dataJson.SPEAKERSSLIDE;
 						//console.log("speakersslide",window.vm.confData.SPEAKERSSLIDE);
