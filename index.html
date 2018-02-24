@@ -948,7 +948,6 @@
 				
                       $.getJSON('data.json', function (dataJson){
                         console.log('dataJson',dataJson);
-						window.vm.confData = dataJson;									
 						//window.vm.confData.SPEAKERSSLIDE = dataJson.SPEAKERSSLIDE;
 						//console.log("speakersslide",window.vm.confData.SPEAKERSSLIDE);
 						var speakersLength = dataJson.SPEAKERS.length;
@@ -973,6 +972,7 @@
 								// console.log("up speakers",dataJson.SPEAKERS[i]);
 							}
 						}			
+						window.vm.confData.schedule = dataJson.schedule;
 						console.log("last",window.vm.confData,  dataJson);
                        	});
                 }
