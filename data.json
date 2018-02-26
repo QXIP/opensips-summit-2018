@@ -3,12 +3,12 @@
       {
          "NAME":"Bogdan-Andrei Iancu",
          "SPEECHTITLE":"Key Notes - An introduction in OpenSIPS 2.4",
-         "SPEECHABSTRACT":" OpenSIPS 2.3 version.....",
+         "SPEECHABSTRACT":"OpenISPS 2.4 is focused on clustering and distribution, but not limited to that. A walk through what this new OpenSIPS version has to over, like SIPREC, distributed user location, full anycast support, distributed presence and many more.",
          "TEXTIMG":"http://i.imgur.com/c0q8TjB.png",
          "TEXTTITLE":"Bogdan-Andrei Iancu",
          "COMPANY":"OpenSIPS Project",
-         "DESC":"Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the read-life needs.",
-         "TWITTER":"https://twitter.com/@opensips",
+         "DESC":"Bogdan is the OpenSIPS project founder with an experience of 15+ year in the SIP world. Practicing the symbioses between managing the Open Source project and building commercial products around OpenSIPS, gives the best results in producing a viable SIP Server software for the real-life needs.",
+         "TWITTER":"https://twitter.com/@bogdan_iancu",
          "POSITION":"Founder"
       },
       {
@@ -23,15 +23,15 @@
          "POSITION":"Director, Worldwide Asterisk Community"
       },
       {
-         "NAME":"Guillaume Montassier",
-         "SPEECHTITLE":"OpenSIPS Platform of a telecom carrier",
-         "SPEECHABSTRACT":"The presentation proposes to introduce to the audience  the new OpenIP telecom platform, which is base on Opensips solution.",
-         "TEXTIMG":"",
-         "TEXTTITLE":"Guillaume Montassier",
-         "COMPANY":"OpenIP",
-         "DESC":"My name is Guillaume MONTASSIER. I'm an R&D engineer at OpenIP and in charge of the development of the Telecom platform.",
-         "TWITTER":"",
-         "POSITION":"R&D engineer"
+         "NAME":"Jonas Borjesson",
+         "SPEECHTITLE":"In the Trenches of a Globally Spanning SIP Network",
+         "SPEECHABSTRACT":"In this talk I will share my experience of running a globally spanning SIP network deployed on Amazon Web Services. We will be looking into the cause of some incidents we have seen over the years and what we learned from them. In particular, we will look into loops, registration issues, when to fail-over, when not to fail-over, network partitions and more. We will also look into some best-practices when all your SIP elements are deployed on AWS.",
+         "TEXTIMG":"https://media-exp2.licdn.com/media/p/8/000/1d6/1e7/13d7e3d.jpg",
+         "TEXTTITLE":"Jonas Borjesson",
+         "COMPANY":"Twilio",
+         "DESC":"For over a decade, Jonas Borjesson has built everything from complete SIP-based VoIP and presence solutions to RTP relays and audio recorders. He has taken part in building SIP stacks from scratch and was part of the JSR359 Expert Group, defining next gen Java based SIP container. In his spare time, he builds SIP stacks.",
+         "TWITTER":"https://twitter.com/@borjessonjonas",
+         "POSITION":"Software Architect"
       },
       {
          "NAME":"Alejandro Rios Peña",
@@ -57,8 +57,8 @@
       },
       {
          "NAME":"Flavio Goncalves",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
+         "SPEECHTITLE":"SIP in the wild!",
+         "SPEECHABSTRACT":"Wholesale ITSPs have a challenge to support any SIP client to any SIP termination. Very often, failures in SIP signaling generate problems on accounting, and cause hanged and/or disconnected calls. In this presentation you will learn how to mitigate some of these problems.",
          "TEXTIMG":"http://i.imgur.com/5PS7U7r.png",
          "TEXTTITLE":"Flavio Goncalves",
          "COMPANY":"SIPPulse",
@@ -100,20 +100,20 @@
          "POSITION":"CEO"
       },
       {
-         "NAME":"Dan Bogos",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
+         "NAME":"Dan Christian Bogos",
+         "SPEECHTITLE":"LCR with real-time number portability using OpenSIPS and CGRateS",
+         "SPEECHABSTRACT":"Modern Telecommunications  require operators dealing with large databases of numbers ported from original source in order to comply with industry regulations. Moreover choosing to ignore this part can bring serious financial losses due to incorrect termination cost calculations.",
          "TEXTIMG":"http://i.imgur.com/2D2AjWr.png",
-         "TEXTTITLE":"Dan Bogos",
-         "COMPANY":"CGRates",
-         "DESC":"",
+         "TEXTTITLE":"Dan Christian Bogos",
+         "COMPANY":"ITsysCOM GmbH",
+         "DESC":"He is the founder of ITsysCOM, experienced communications architect and VoIP specialist. Dan is a double graduate of Politechnica University, Timisoara, with post-graduate specialization in Communication Protocols and Software Development. A frequent and well-known contributor to the Open Source community, most noticeably being the co-founder of CGRateS Project, Dan is a firm believer in merging the very best production-ready software to create high-quality, scalable and cost-effective communications solutions.",
          "TWITTER":"https://twitter.com/@danbogos",
          "POSITION":"Founder"
       },
       {
          "NAME":"Michael Mavroudis",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
+         "SPEECHTITLE":"Got Training?",
+         "SPEECHABSTRACT":"Become a VoIP master of the universe thought the acquisition of knowledge via FreeSWITCH certified training.  Leverage the opportunity to learn the tips, tricks, and undocumented gems to rocket towards the FreeSWITCH event horizon peer inside and follow the reply_route back with a certification.  Milk is optional.  Belgium beer is required!",
          "TEXTIMG":"https://media-exp2.licdn.com/media/p/2/000/01c/3c2/2946a2d.jpg",
          "TEXTTITLE":"Michael Mavroudis",
          "COMPANY":"FreeSWITCH",
@@ -123,8 +123,8 @@
       },
       {
          "NAME":"Razvan Crainea",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
+         "SPEECHTITLE":"Full Anycast support at the edge of your platform using OpenSIPS 2.4",
+         "SPEECHABSTRACT":"One of the critical points in a VoIP infrastructure are the proxies located at the edge of the platform, whose job is to dispatch calls towards the core of the platform in a reliable manner. But how do you ensure calls are reaching the edge proxy anyways? This talk presents a few mechanisms one can use to ensure high availability and load balancing for the edge proxies of your platform. We will discuss about DNS failover, heartbeat, anycast and other mechanisms that can achieve these features, their pros and cons, and when should each of them be used.",
          "TEXTIMG":"http://i.imgur.com/YbMlg4m.png",
          "TEXTTITLE":"Razvan Crainea",
          "COMPANY":"OpenSIPS Project",
@@ -156,8 +156,8 @@
       },
       {
          "NAME":"Liviu Chircu",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
+         "SPEECHTITLE":"Distributed User Location Models with OpenSIPS Cluster",
+         "SPEECHABSTRACT":"Distributing the SIP user location across multiple data centers is a key problem that any large-scale VoIP provider must solve. Moreover, they must also take into account concepts such as traversing the NAT in front of contacts, keeping these NAT pinholes alive or being able to easily scale the service up/down while also ensuring a maximal uptime for it. Most state-of-the-art solutions revolve around the usage of a geo-distributed database coupled with some OpenSIPS scripting in order to route calls to the datacenter on which the targeted user is binded. Using this as a starting point, each solution is then customized according to the needs of the provider. In this presentation, the discussion will focus around the designs that went into OpenSIPS 2.4 with the purpose of exposing generic and intuitive script primitives in order to build robust SIP user location services that solve one or more of the above core problems.",
          "TEXTIMG":"http://i.imgur.com/LmSk7gI.jpg",
          "TEXTTITLE":"Liviu Chircu",
          "COMPANY":"OpenSIPS Project",
@@ -167,14 +167,25 @@
       },
       {
          "NAME":"Pete Kelly",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
+         "SPEECHTITLE":"Lessons learned from working with opensips every day for the past 10 years",
+         "SPEECHABSTRACT":"",
          "TEXTIMG":"https://user-images.githubusercontent.com/1423657/31589533-a7cf4f5e-b203-11e7-8a52-bf2f2cfdf72a.png",
          "TEXTTITLE":"Pete Kelly",
          "COMPANY":"SourceVox",
          "DESC":"",
          "TWITTER":"https://twitter.com/@p3k4y",
          "POSITION":""
+      },
+      {
+         "NAME":"Guillaume Montassier",
+         "SPEECHTITLE":"OpenSIPS Platform of a telecom carrier",
+         "SPEECHABSTRACT":"The presentation proposes to introduce to the audience  the new OpenIP telecom platform, which is base on Opensips solution.",
+         "TEXTIMG":"",
+         "TEXTTITLE":"Guillaume Montassier",
+         "COMPANY":"OpenIP",
+         "DESC":"My name is Guillaume MONTASSIER. I'm an R&D engineer at OpenIP and in charge of the development of the Telecom platform.",
+         "TWITTER":"",
+         "POSITION":"R&D engineer"
       },
       {
          "NAME":"Vasilii Rogin",
@@ -213,7 +224,7 @@
          "NAME":"Vasilios Tzanoudakis",
          "SPEECHTITLE":"How to build LRN Service using OpenSIPS",
          "SPEECHABSTRACT":"I will explain to the community how here in VOICELAND we used OpenSIPS to create an LRN (Location Routing Number) Service. We used OpenSIPS 2.2.5 along with cachedb_redis and cachedb_memcached modules and we managed to get response times lower than 500 Microseconds.",
-         "TEXTIMG":"",
+         "TEXTIMG":"assets/images/speakers/Vasilios.Tzanoudakis.jpg",
          "TEXTTITLE":"Vasilios Tzanoudakis",
          "COMPANY":"VOICELAND P.C.",
          "DESC":"",
@@ -232,15 +243,15 @@
          "POSITION":"Owner"
       },
       {
-         "NAME":"Jonas Borjesson",
-         "SPEECHTITLE":"TBD",
-         "SPEECHABSTRACT":"TBD",
-         "TEXTIMG":"https://media-exp2.licdn.com/media/p/8/000/1d6/1e7/13d7e3d.jpg",
-         "TEXTTITLE":"Jonas Borjesson",
-         "COMPANY":"Twilio",
+         "NAME":"Perry Ismangil",
+         "SPEECHTITLE":"PJSIP: A decade of portability",
+         "SPEECHABSTRACT":"Tracing the history of PJSIP through the years with lessons learned",
+         "TEXTIMG":"https://media-exp2.licdn.com/media/AAEAAQAAAAAAAAN0AAAAJDBhM2NjY2Y4LWNhNzktNDUxNC1iMTRiLTNjMjNmMzI2OTdjMw.jpg",
+         "TEXTTITLE":"Perry Ismangil",
+         "COMPANY":"Teluu",
          "DESC":"",
-         "TWITTER":"",
-         "POSITION":"Software Architect"
+         "TWITTER":"https://twitter.com/@ismangil",
+         "POSITION":"Co-Founder"
       },
       {
          "NAME":"Rik Broers",
