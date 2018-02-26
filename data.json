@@ -124,7 +124,7 @@
       {
          "NAME":"Razvan Crainea",
          "SPEECHTITLE":"Full Anycast support at the edge of your platform using OpenSIPS 2.4",
-         "SPEECHABSTRACT":"One of the critical points in a VoIP infrastructure are the proxies located at the edge of the platform, whose job is to dispatch calls towards the core of the platform in a reliable manner. But how do you ensure calls are reaching the edge proxy anyways? This talk presents a few mechanisms one can use to ensure high availability and load balancing for the edge proxies of your platform. We will discuss about DNS failover, heartbeat, anycast and other mechanisms that can achieve these features, their pros and cons, and when should each of them be used.",
+         "SPEECHABSTRACT":"This talk will present the new mechanisms added in OpenSIPS 2.4 that allow you to build a fully flavored anycast setup using OpenSIPS at the edge of your network. In this presentation I will show you the problems that appear when using SIP over anycast networks and how they are solved using OpenSIPS and the new replication mechanism for the transaction layer.",
          "TEXTIMG":"http://i.imgur.com/YbMlg4m.png",
          "TEXTTITLE":"Razvan Crainea",
          "COMPANY":"OpenSIPS Project",
