@@ -45,6 +45,17 @@
          "POSITION":"Senior Manager of Telecom Software Engineering"
       },
       {
+         "NAME":"Rogelio Perez",
+         "SPEECHTITLE":"Telnyx updates",
+         "SPEECHABSTRACT":"",
+         "TEXTIMG":"https://media.licdn.com/media/AAEAAQAAAAAAAAw4AAAAJDU5ZGYxMmYxLWYyZTQtNDY4ZS1hMGZkLWFhNDY2ZjY5OTc3ZQ.jpg",
+         "TEXTTITLE":"Rogelio Perez",
+         "COMPANY":"Telnyx",
+         "DESC":"",
+         "TWITTER":"",
+         "POSITION":"Voice Engineer"
+      },
+      {
          "NAME":"Giovanni Maruzzelli",
          "SPEECHTITLE":"FreeSWITCH clustering with OpenSIPS (done well)",
          "SPEECHABSTRACT":"How to scale so that you can handle your growing SIP traffic by adding more FreeSWITCH machines, while keeping the functionality of a single machine? Let's review the best practices and the latest techniques for load balancing, registrations, presence, call transfer, queues, conferences, etc",
@@ -252,6 +263,17 @@
          "DESC":"",
          "TWITTER":"",
          "POSITION":"Technology Director & Co-Founder"
+      },
+      {
+         "NAME":"Oleg Khovayko",
+         "SPEECHTITLE":"Blockchain for VOIP: ENUMER - Distributed ENUM implemetation",
+         "SPEECHABSTRACT":"Introduction into a decentralized implementation of the ENUM VoIP protocol based on the Emercoin blockchain. We discuss how the ENUMER system is organized and how it is different from other ENUM implementations.",
+         "TEXTIMG":"assets/images/speakers/oleg_khovayko.jpg",
+         "TEXTTITLE":"Oleg Khovayko",
+         "COMPANY":"Emercoin Group",
+         "DESC":"Born in 1967, MS degree in CS from MEPhI. Has a strong background in the realm of finance and specializes in the technical aspects of blockchains and cryptography.",
+         "TWITTER":"",
+         "POSITION":"CTO"
       },
       {
          "NAME":"Shlomi Gutman",
