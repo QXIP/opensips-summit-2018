@@ -45,6 +45,17 @@
          "POSITION":"Senior Manager of Telecom Software Engineering"
       },
       {
+         "NAME":"Eric Tamme",
+         "SPEECHTITLE":"Supporting mobile clients in a distributed SIP infrastructure with OpenSIPS",
+         "SPEECHABSTRACT":"Mobile clients face challenging network conditions. This talk focuses on RFC5626, SIP Outbound, implementation and asynchronous operations in OpenSIPS to support WebRTC, and native, mobile clients in a distributed SIP signalling infrastructure.",
+         "TEXTIMG":"https://avatars0.githubusercontent.com/u/21685?s=460&v=4",
+         "TEXTTITLE":"Eric Tamme",
+         "COMPANY":"OnSIP",
+         "DESC":"Principal engineer at OnSIP, federated SIP evangelist, and phone phreak.",
+         "TWITTER":"",
+         "POSITION":"Principal Engineer"
+      },
+      {
          "NAME":"Rogelio Perez",
          "SPEECHTITLE":"Telephony Applications HA using Container Routing",
          "SPEECHABSTRACT":"There are multiple ways of implementing High Availability for telephony applications, however we think our unique approach might be of interest for those already using containerized FOSS. We'll demonstrate how to leverage container routing features to create applications with built-in HA.",
